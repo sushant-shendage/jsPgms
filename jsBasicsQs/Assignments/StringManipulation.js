@@ -2,16 +2,25 @@
 //20 tasks
 
 /*
-1. **Task**: Write a function that accepts a full name (first and last name) as input and returns the total number of characters in the name, excluding spaces. The function should also return a message like: "Your name has X characters."
+1. **Task**: Write a function that accepts a full name (first and last name) as input and returns the total number of characters in the name, excluding spaces. 
+The function should also return a message like: "Your name has X characters."
 */
 //-------------------------------------------------\\
-let str1 = "good morning";
-
 function fx1(str) {
-    return str.toLocaleUpperCase();
+    let count=0;
+     for(i=0;i<str.length;i++)
+    {
+        if (str.charAt(i)==' ') {
+            continue;
+        }
+        count++;
+    }
+
+     return `Your name has ${count} characters.`;
 }
-let modifiedStr = fx1("good morning");
-console.log(modifiedStr);
+console.log(fx1("good morning"));
+console.log(fx1("1234 56789"));
+
 console.log("---------------------------------------");
 //-------------------------------------------------//
 
