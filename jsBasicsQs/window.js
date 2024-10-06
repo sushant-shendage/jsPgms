@@ -1,0 +1,4 @@
+// log()
+// error()
+// warn()
+// document()
