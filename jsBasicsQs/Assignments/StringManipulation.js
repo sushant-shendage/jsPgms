@@ -49,7 +49,8 @@ console.log("---------------------------------------");
 
 
 /*
-3. **Task**: Write a function that takes a string and returns the Unicode value of the character in the middle of the string. If the string has an even number of characters, return the Unicode value of the character just before the middle.
+3. **Task**: Write a function that takes a string and returns the Unicode value of the character in the middle of the string. 
+If the string has an even number of characters, return the Unicode value of the character just before the middle.
 */
 //-------------------------------------------------\\
 function fx3(str) {
@@ -351,13 +352,14 @@ return a message like: "The string starts with an uppercase letter." Otherwise, 
 //-------------------------------------------------\\
 function fx18_1(str) {
     if (str.charAt(0) >= 'A' && str.charAt(0) <= 'Z') {
-        console.log(`The string "${str}" starts with an uppercase letter.`);
+        return `The string "${str}" starts with an uppercase letter.`;
     } else {
-        console.log(`The string "${str}" starts with an lowercase letter.`);
+        return `The string "${str}" starts with an lowercase letter.`;
+
     }
 }
-fx18_1("Uppercase");
-fx18_1("lowwercase");
+console.log(fx18_1("Uppercase"));
+console.log(fx18_1("lowwercase"));
 console.log("---------------------------------------");
 //-------------------------------------------------//
 
