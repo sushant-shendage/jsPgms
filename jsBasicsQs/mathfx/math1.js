@@ -14,7 +14,23 @@ console.log("--console.log(Math.random())--");
 console.log(Math.random());
 
 function otp(num) {
-     let a = Math.round(Math.random() * Math.pow(10, num));
-     return `${num} digit otp ${a}`;
+     let a;
+
+     while (true) {
+          a = Math.round(Math.random() * Math.pow(10, num));
+          // console.log(Math.round(Math.random() * Math.pow(10, num)));
+          // console.log(Math.pow(10,num-1));
+          // console.log(Math.pow(10,num));
+          if (a >= (Math.pow(10, num - 1)) && a < (Math.pow(10, num))) {
+               console.log( `${num} digit otp ${a}`);
+               return;
+          }
+     }
 }
-otp(5);
+
+for(let i=1;i<=1000;i++)
+{
+otp(4);
+}
+
+console.log("exicution completed..!");
