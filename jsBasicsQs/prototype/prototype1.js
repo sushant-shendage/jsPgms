@@ -15,6 +15,7 @@ console.log("8 oct,24");
 ---multiple models derived from using basic prototype
 
 ---[***]oops in js
+---[***] window is parent object of all object
 */
 
 
@@ -33,7 +34,7 @@ console.log("---------------------------");
 console.log("---------------------------");
  let str="demo";
 
-console.log(str.__proto__);
+console.log(num.__proto__);
 console.log("---------------------------");
 
 //---------------------------------------------//
@@ -85,7 +86,8 @@ console.log("---------------------------");
 console.log("---------------------------");
   let obj1={name:"Tinku"}
   let obj2={surname:"pande"}
-
+  
+console.log(obj2)
 console.log(obj1)
 obj1.__proto__=obj2
 console.log(obj1)
