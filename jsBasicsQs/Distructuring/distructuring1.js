@@ -14,3 +14,4 @@ console.log(att1);
 
 //lly can be used for array,
 
+//distructuring is the process of extracting out the values of an object
