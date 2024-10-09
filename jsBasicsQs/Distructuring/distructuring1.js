@@ -15,3 +15,11 @@ console.log(att1);
 //lly can be used for array,
 
 //distructuring def ::is the process of extracting out the values of an object
+
+
+console.log(window);
+console.log(window.document)//distructured feture which will be more in use
+console.log(document)
+
+//react example of distructuring in react ::
+//let {usestate}=React
