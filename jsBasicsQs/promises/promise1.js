@@ -56,20 +56,41 @@
 //states of p
 //what is readiable and writable stream
 //fetch method will return a promise
+//how to handle promises 
 
 
 
-console.log("first");
-let promiseResolve=fetch("https://api.github.com/users");
-console.log(promiseResolve);
+// console.log("first");
+// let promiseResolve=fetch("https://api.github.com/users");
+// console.log(promiseResolve);
 
-promiseResolve.then((val)=>{
-    console.log(val);
-    let data=val.json();
-    return data;
-}).then((val2)=>{console.log(val2)}).catch((err)=>{console.log("something went wrong...!",err)})
-console.log("last");
+// promiseResolve.then((val)=>{
+//     console.log(val);
+//     let data=val.json();
+//     return data;
+// }).then((val2)=>{console.log(val2)}).catch((err)=>{console.log("something went wrong...!",err)})
+// console.log("last");
 
+
+fetch("https://api.github.com/users").then((val)=>{return val.jason()}).then((data)=>{console.log(data)}).catch((err)=>{console.log("something went wrong...!",err)})
+
+
+
+//-----------------------------
+//promises are the objects in js
+//promises are used to handle the asynchronus task
+//with promises we get 3 different sates 
+//pending resolve and rejected
+
+//--promise will be in pending state when it is neither resolved or rejected
+//--promise will be in resoved state when promise ifs fullfield ,when promise is resolved it will call the 'then()' block and we can pass some argument along with it 
+//--promise will be in reject state when promise ifs not fullfield ,when promise is rejected it will call the 'catch()' block ,
+//catch block can be used to handle the errors and exceptions 
+
+//--promise can't be resolved or rejected at a time 
+
+//--synchronous task in js will internally return the promise we just have to handle the promise using then and catch block
+//fetch() method will return the promise we have to handle that using then and fetch block
 
 
 
