@@ -76,7 +76,7 @@ fetch("https://api.github.com/users").then((val)=>{return val.jason()}).then((da
 
 
 
-//-----------------------------
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
 //promises are the objects in js
 //promises are used to handle the asynchronus task
 //with promises we get 3 different sates 
@@ -91,6 +91,6 @@ fetch("https://api.github.com/users").then((val)=>{return val.jason()}).then((da
 
 //--synchronous task in js will internally return the promise we just have to handle the promise using then and catch block
 //fetch() method will return the promise we have to handle that using then and fetch block
-
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
