@@ -1,6 +1,7 @@
 // //when to use?
 // //to achive asynchronous behaviour
 // //js engine is not multithreaded
+// //it's time consuming
 
 
 
@@ -91,6 +92,26 @@ fetch("https://api.github.com/users").then((val)=>{return val.jason()}).then((da
 
 //--synchronous task in js will internally return the promise we just have to handle the promise using then and catch block
 //fetch() method will return the promise we have to handle that using then and fetch block
+//-Promises was introduced to call backhell
+
+/*
+.
+  .
+    .
+      .
+        .
+      .
+    .
+  .
+.
+
+
+call-back hell pattern
+
+
+-to overcome this promises are ontroduced
+-to overcome limitations of promises async await
+*/
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 
