@@ -486,44 +486,155 @@ body.appendChild(btn16);
 
 // 21. **Button Hover Event:**
 //     - Add a button labeled “Hover Me”. Write a function that changes the background color of the button when the user hovers over it and reverts the color when the mouse leaves.
+let btn17=document.createElement('button');
+btn17.textContent="Hover me";
+btn17.addEventListener('mouseover', () => {
+    btn17.style.backgroundColor = 'green'; 
+});
+
+btn17.addEventListener('mouseout', () => {
+    btn17.style.backgroundColor = 'red'; 
+});
+body.appendChild(btn17);
 //----------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------\\
 
 // 22. **Form Submission Event:**
 //     - Create a simple form with an input field and a submit button. Write a function that prevents the form from being submitted if the input is empty, and display an error message below the form. Use `event.preventDefault()` to prevent form submission.
+  let inputField4=document.createElement('input');
+  inputField4.placeholder="enter input";
+  body.appendChild(inputField4);
+  let btn18=document.createElement('button');
+  btn18.textContent='submit';
+  btn18.addEventListener('click',function(event ){
+    console.log(inputField4.value);
+      if (inputField4.value.trim()=="") {
+        event.preventDefault();
+         
+   alert("input field can't be empty..!")
+    }else{
+
+        btn18.textContent=inputField4.value;
+    }
+  }
+
+  )
+  body.appendChild(btn18);
+
 //----------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------\\
 
 // 23. **Keyboard Event:**
 //     - Add an input field. Write a function that listens for the “Enter” key and triggers an alert when it’s pressed inside the input field. Make sure the function only works for the “Enter” key.
+
+let inputField5=document.createElement('input');
+inputField5.placeholder="enter input";
+body.appendChild(inputField5);
+let btn19=document.createElement('button');
+btn19.textContent='submit';
+body.appendChild(btn19);
+inputField5.addEventListener('keydown',function( event ){
+ 
+    if (event.key==="Enter") {
+ alert("you entered enter key on keybord..!")
+  }else{
+
+  }
+}
+
+)
 //----------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------\\
 
 // 24. **Double-Click Event:**
 //     - Create a div with some content and write a function that changes its background color when it’s double-clicked. The background should change every time a double-click event occurs.
+
+let div10=document.createElement('div');
+div10.textContent="double click to change color..!"
+div10.style.backgroundColor="yellow"
+div10.style.cursor="pointer"
+body.appendChild(div10);
+const colorArray = ["red","blue", "green","yellow"]
+div10.addEventListener('dblclick',function(){
+let color=Math.round(Math.random()*10)%colorArray.length;
+div10.style.backgroundColor=colorArray[color];
+})
+
+
 //----------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------\\
 
 // 25. **Key Press Counter:**
 //     - Add an input field and a paragraph that displays the number of times a key has been pressed inside the input field. Write a function that increments the count with every keypress and updates the paragraph.
+let inputField6=document.createElement('input');
+inputField6.placeholder="enter input";
+body.appendChild(inputField6);
+
+let paraEle8=document.createElement('p');
+paraEle8.textContent=" - - - "
+body.appendChild(paraEle8);
+let count2=0;
+inputField6.addEventListener('keydown',function( event ){
+count2++;
+    paraEle8.textContent=`${count2}`;
+}
+
+)
+
+
 //----------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------\\
 
 // 26. **Mouse Movement Tracker:**
 //     - Write a function that tracks the mouse’s position on the page in real-time and displays the current x and y coordinates in a div. Update the coordinates every time the mouse moves.
+
+
+let div11=document.createElement('div');
+div11.style.backgroundColor="purple"
+body.appendChild(div11);
+document.addEventListener('mousemove', (event) => {
+    const x = event.clientX; // Get the X coordinate
+    const y = event.clientY; // Get the Y coordinate
+    div11.textContent = `X: ${x}, Y: ${y}`; // Update the div content
+});
 //----------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------\\
 
 // 27. **Right-Click Event:**
 //     - Add an element to your page, like a button or div. Write a function that triggers an alert when the user right-clicks on the element. Use the `contextmenu` event to handle the right-click.
+ 
+let div12=document.createElement('div');
+div12.style.backgroundColor="indigo"
+div12.textContent="right click here..!"
+body.appendChild(div12);
+div12.addEventListener('contextmenu', (event) => {
+    event.preventDefault();  
+    alert('Right-click detected!');  
+});
+
 //----------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------\\
 
 // 28. **Mouse Over Event:**
 //     - Create a div or paragraph with some text. Write a function that changes its text or color when the mouse is moved over the element and changes it back when the mouse leaves.
+
+let div13=document.createElement('div');
+div13.style.backgroundColor="pink"
+div13.textContent="over mouse here..!"
+body.appendChild(div13);
+div13.addEventListener('mouseover', (event) => {
+    event.preventDefault();  
+    alert(' mouse is here..!');  
+});
 //----------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------\\
 
 // 29. **Focus Event:**
 //     - Add an input field. Write a function that changes the input field’s border color when it gains focus and reverts the color when it loses focus. Use the `focus` and `blur` events for this.
+const inputField7 = document.createElement('input');
+ body.appendChild(inputField7)
+ inputField7.borderColor='3px solid black'
+
+inputField7.addEventListener('focus', () => inputField7.style.borderColor = 'lightblue');
+inputField7.addEventListener('blur', () => inputField7.style.borderColor = 'blue');
 
