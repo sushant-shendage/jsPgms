@@ -21,7 +21,7 @@ bgColorchangingBtn.addEventListener('click', function() {
        
       body.style.backgroundColor=colorArray[color];
 });
- bgColorchangingBtn.on
+//  bgColorchangingBtn.on
 body.appendChild(bgColorchangingBtn);
 //----------------------------------------------------------------------------------//
 
@@ -637,4 +637,3 @@ const inputField7 = document.createElement('input');
 
 inputField7.addEventListener('focus', () => inputField7.style.borderColor = 'lightblue');
 inputField7.addEventListener('blur', () => inputField7.style.borderColor = 'blue');
-
