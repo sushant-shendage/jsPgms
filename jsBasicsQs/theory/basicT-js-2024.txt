@@ -1,0 +1,2352 @@
+
+
+
+
+-JavaScript Notes###
+-History
+ -1.	JavaScript was first created by Brendan Eich in just 10 days in May 1995 while he was working at Netscape Communications Corporation.
+ -2.	The initial release was called Mocha and later renamed to LiveScript, and finally JavaScript.
+ -3.	 Initially, JavaScript was designed to be a lightweight scripting language for adding interactivity to web pages.
+ -4.	At the time, web pages were mostly static and lacked interactivity, and the only way to add dynamic content to a web page was to use a server-side programming language like PHP or Perl.
+ -5.	However, this approach had limitations and was not well-suited to creating responsive, interactive user interfaces.
+ -6.	The idea behind JavaScript was to create a scripting language that could be executed on the client-side (in the user's web browser) and could be used to add interactivity to web pages.
+ -7.	This allowed web developers to create more engaging and interactive websites, without having to rely on server-side programming languages.
+ -8.	Its popularity grew rapidly as it was one of the few languages that could be executed directly in web browsers, without the need for additional plugins or software.
+ -9.	In 1996, Microsoft released JScript as a competitor to JavaScript, which was their own implementation of the language for their Internet Explorer browser.
+ -10.	 However, JScript was very similar to JavaScript, and the two languages were largely interchangeable.
+ -11.	Over time, JavaScript has evolved and grown to become a full-fledged programming language, capable of creating complex applications on both the client and server-side.
+ -12.	The development of JavaScript has been heavily influenced by a number of factors, including the emergence of new web technologies, changes in programming paradigms, and the rise of new development frameworks and libraries.
+ -13.	Today, JavaScript is one of the most widely used programming languages in the world, powering many of the most popular websites and web applications.
+ -14.	It continues to evolve and adapt to the changing needs of the web, with new features and capabilities being added on a regular basis.
+
+
+	
+-#Introduction
+1. Javascript is scripting and programming language.
+
+2. It is purely object based language.This means that variables, functions, and even primitive data types like 
+4. It is object oriented programming language , it means we can create our own object. 
+(It is not purely object oriented programming language)
+numbers and strings are object,everything is object in javascript.
+
+3. It is dynamically typed language , it means type of value stored in memory block is checked at runtime because of this 
+nature we can store any type of value in variable.
+
+5. It is interepreted language
+6. It is synchronous language , it has single threaded architecture. Instructions get executed line by line.
+7. It is single call stack
+
+8. Mainly introduced to instruct the browser
+9. Js helps to provide behavior and functionality to webpage and helps to develop dynamic webpage
+10. Every browser have js engine to run js code. Therefore browser become environment to run js code.
+11. To run Js code outside browser we just need Javascript runtime environment (Node).
+12. Js is used to add functionality to website.
+
+
+#Javascript Runtime Environment
+1. JavaScript Runtime Enviroment provides the enviroment where we can run our JavaScript code.
+2. Two javascript runtime enviroments are :
+I. Browser
+II. Node.js
+#Browser
+1. A browser is a software application that is used to access and view information on the World Wide Web (WWW).
+2. It allows users to interact with web pages, view multimedia content, and surf the internet.
+3. The Browser acts as a JavaScript runtime environment because it includes a JavaScript engine that interprets and executes JavaScript code
+#JavaScript Engine
+1. A JavaScript engine is a computer program that executes JavaScript code.
+2. It is a core component of web browsers, server-side JavaScript platforms, and other JavaScript-based environments.
+#Some Popular JavaScript Engines Include:
+1. V8 (fastest Js engine): developed by Google, used in Google Chrome and Node.js
+2. SpiderMonkey : developed by Mozilla, used in Firefox
+3. JavaScriptCore : developed by Apple, used in Safari
+4. Chakra : developed by Microsoft, used in Microsoft Edge and Internet Explorer (legacy)
+#Node.Js
+1. The main reason of javascript popularity.
+2. Node.js is a software application that executes JavaScript code. It is not a framework or a library.
+3. It allows developers to run JavaScript code outside of a web browser, such as on a server or command-line interface.
+4. Node.js uses the V8 JavaScript engine, which is also used in Google Chrome.
+5. It is built on top of an event-driven, non-blocking I/O model, which allows it to handle large numbers of simultaneous connections without blocking the execution of other code.
+6. This makes it well-suited for building scalable, high-performance applications that can handle a large amount of traffic.
+7. Because after introduction of Nodejs, we were able to run javascript anywhere like in web servers, as command-line tools, desktop applications, and even IoT (Internet of Things) devices.
+
+
+Features of JavaScript
+
+1. **Scripting Language**:
+   - **What it means**: JavaScript is used to write small programs that automate tasks in web pages.
+   - **Why we call it that**: It helps make web pages interactive. For example, it can change text when you click a button or show a pop-up message.
+
+2. **High-Level Language**:
+   - **What it means**: JavaScript is easy for humans to read and write.
+   - **Why we call it that**: You don’t need to know the details of how the computer works to use JavaScript. It uses simple commands and is close to human language, making it accessible for beginners.
+
+3. **Interpreted Language**:
+   - **What it means**: JavaScript code runs directly in the web browser without needing to be converted into another form first. It has interpretor which runs the code line by line.
+   - **Why we call it that**: You can see the results of your code immediately in the browser. This makes it easy to test and fix your code quickly.
+
+4. **Synchronous Language**:
+   - **What it means**: JavaScript runs commands one after another, in order.
+   - **Why we call it that**: When you write JavaScript code, it does each task step by step, making it easier to understand what’s happening in your program.
+
+5. **Object-Based Language**:
+   - **What it means**: JavaScript uses objects to store and organize data and functions. 
+   - **Why we call it that**: In javaScript most of the things are are internally objects. Objects help keep related code together. For example, you can have an object for a car that includes properties like color and methods like drive.
+
+6. **Object-Oriented Language**:
+   - **What it means**: JavaScript supports creating complex structures using classes and objects.
+   - **Why we call it that**:We can create our own objects using classes in javascript.
+
+7. **Loosely Typed Language**:
+   - **What it means**: In JavaScript, you don’t have to specify what type of data (like a number or text) a variable holds. Also we don’t need to follow the syntax very strictly eg. No need to write semicolons. 
+   - **Why we call it that**: This makes writing code faster and easier because you don’t have to worry about declaring data types and don’t need to strictly follow the syntax. You can just start using variables right away.
+
+8. **Dynamically Typed Language**:
+   - **What it means**: The type of data a variable holds can change as your program runs.
+   - **Why we call it that**: You can have a variable that starts as a number and then later hold a string (text) without any extra work. This flexibility makes JavaScript powerful for writing dynamic programs.
+
+9. **Single-Threaded Language**:
+   - **What it means**: JavaScript can only do one thing at a time.
+   - **Why we call it that**: This simplicity makes it easier to write and understand JavaScript code. Even though it does one task at a time, JavaScript can handle many tasks quickly by using techniques like callbacks and promises.
+ 
+
+Aug 28 - 2:26 pm 
+#JavaScript Notes###
+
+
+#History
+1.	JavaScript was first created by Brendan Eich in just 10 days in May 1995 while he was working at Netscape Communications Corporation.
+2.	The initial release was called Mocha and later renamed to LiveScript, and finally JavaScript.
+3.	 Initially, JavaScript was designed to be a lightweight scripting language for adding interactivity to web pages.
+4.	At the time, web pages were mostly static and lacked interactivity, and the only way to add dynamic content to a web page was to use a server-side programming language like PHP or Perl.
+5.	However, this approach had limitations and was not well-suited to creating responsive, interactive user interfaces.
+6.	The idea behind JavaScript was to create a scripting language that could be executed on the client-side (in the user's web browser) and could be used to add interactivity to web pages.
+7.	This allowed web developers to create more engaging and interactive websites, without having to rely on server-side programming languages.
+8.	Its popularity grew rapidly as it was one of the few languages that could be executed directly in web browsers, without the need for additional plugins or software.
+9.	In 1996, Microsoft released JScript as a competitor to JavaScript, which was their own implementation of the language for their Internet Explorer browser.
+10.	 However, JScript was very similar to JavaScript, and the two languages were largely interchangeable.
+11.	Over time, JavaScript has evolved and grown to become a full-fledged programming language, capable of creating complex applications on both the client and server-side.
+12.	The development of JavaScript has been heavily influenced by a number of factors, including the emergence of new web technologies, changes in programming paradigms, and the rise of new development frameworks and libraries.
+13.	Today, JavaScript is one of the most widely used programming languages in the world, powering many of the most popular websites and web applications.
+14.	It continues to evolve and adapt to the changing needs of the web, with new features and capabilities being added on a regular basis.
+
+	
+#Introduction
+1. Javascript is scripting and programming language.
+2. It is purely object based language.This means that variables, functions, and even primitive data types like numbers and strings are object,everything is object in javascript.
+3. It is dynamically typed language , it means type of value stored in memory block is checked at runtime because of this nature we can store any type of value in variable.
+4. It is object oriented programming language , it means we can create our own object. (It is not purely object oriented programming language)
+5. It is interepreted language
+6. It is synchronous language , it has single threaded architecture. Instructions get executed line by line.
+7. It is single call stack
+8. Mainly introduced to instruct the browser
+9. Js helps to provide behavior and functionality to webpage and helps to develop dynamic webpage
+10. Every browser have js engine to run js code. Therefore browser become environment to run js code.
+11. To run Js code outside browser we just need Javascript runtime environment (Node).
+12. Js is used to add functionality to website.
+
+
+#Javascript Runtime Environment
+1. JavaScript Runtime Enviroment provides the enviroment where we can run our JavaScript code.
+2. Two javascript runtime enviroments are :
+I. Browser
+II. Node.js
+#Browser
+1. A browser is a software application that is used to access and view information on the World Wide Web (WWW).
+2. It allows users to interact with web pages, view multimedia content, and surf the internet.
+3. The Browser acts as a JavaScript runtime environment because it includes a JavaScript engine that interprets and executes JavaScript code
+#JavaScript Engine
+1. A JavaScript engine is a computer program that executes JavaScript code.
+2. It is a core component of web browsers, server-side JavaScript platforms, and other JavaScript-based environments.
+#Some Popular JavaScript Engines Include:
+1. V8 (fastest Js engine): developed by Google, used in Google Chrome and Node.js
+2. SpiderMonkey : developed by Mozilla, used in Firefox
+3. JavaScriptCore : developed by Apple, used in Safari
+4. Chakra : developed by Microsoft, used in Microsoft Edge and Internet Explorer (legacy)
+#Node.Js
+1. The main reason of javascript popularity.
+2. Node.js is a software application that executes JavaScript code. It is not a framework or a library.
+3. It allows developers to run JavaScript code outside of a web browser, such as on a server or command-line interface.
+4. Node.js uses the V8 JavaScript engine, which is also used in Google Chrome.
+5. It is built on top of an event-driven, non-blocking I/O model, which allows it to handle large numbers of simultaneous connections without blocking the execution of other code.
+6. This makes it well-suited for building scalable, high-performance applications that can handle a large amount of traffic.
+7. Because after introduction of Nodejs, we were able to run javascript anywhere like in web servers, as command-line tools, desktop applications, and even IoT (Internet of Things) devices.
+
+
+Features of JavaScript
+
+1. **Scripting Language**:
+   - **What it means**: JavaScript is used to write small programs that automate tasks in web pages.
+   - **Why we call it that**: It helps make web pages interactive. For example, it can change text when you click a button or show a pop-up message.
+
+2. **High-Level Language**:
+   - **What it means**: JavaScript is easy for humans to read and write.
+   - **Why we call it that**: You don’t need to know the details of how the computer works to use JavaScript. It uses simple commands and is close to human language, making it accessible for beginners.
+
+3. **Interpreted Language**:
+   - **What it means**: JavaScript code runs directly in the web browser without needing to be converted into another form first. It has interpretor which runs the code line by line.
+   - **Why we call it that**: You can see the results of your code immediately in the browser. This makes it easy to test and fix your code quickly.
+
+4. **Synchronous Language**:
+   - **What it means**: JavaScript runs commands one after another, in order.
+   - **Why we call it that**: When you write JavaScript code, it does each task step by step, making it easier to understand what’s happening in your program.
+
+5. **Object-Based Language**:
+   - **What it means**: JavaScript uses objects to store and organize data and functions. 
+   - **Why we call it that**: In javaScript most of the things are are internally objects. Objects help keep related code together. For example, you can have an object for a car that includes properties like color and methods like drive.
+
+6. **Object-Oriented Language**:
+   - **What it means**: JavaScript supports creating complex structures using classes and objects.
+   - **Why we call it that**:We can create our own objects using classes in javascript.
+
+7. **Loosely Typed Language**:
+   - **What it means**: In JavaScript, you don’t have to specify what type of data (like a number or text) a variable holds. Also we don’t need to follow the syntax very strictly eg. No need to write semicolons. 
+   - **Why we call it that**: This makes writing code faster and easier because you don’t have to worry about declaring data types and don’t need to strictly follow the syntax. You can just start using variables right away.
+
+8. **Dynamically Typed Language**:
+   - **What it means**: The type of data a variable holds can change as your program runs.
+   - **Why we call it that**: You can have a variable that starts as a number and then later hold a string (text) without any extra work. This flexibility makes JavaScript powerful for writing dynamic programs.
+
+9. **Single-Threaded Language**:
+   - **What it means**: JavaScript can only do one thing at a time.
+   - **Why we call it that**: This simplicity makes it easier to write and understand JavaScript code. Even though it does one task at a time, JavaScript can handle many tasks quickly by using techniques like callbacks and promises.
+ 
+
+Aug 28 - 2:26 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:35 pm
+
+download
+Aug 30 - 4:36 pm
+
+download
+Aug 30 - 4:36 pm
+
+download
+Aug 30 - 4:36 pm
+
+download
+Aug 30 - 4:36 pm
+notes till literals. 
+
+Aug 30 - 4:36 pm
+Qualification - ME/M.TECH/MCA.
+Passout year - 23/24
+criteria - 60% through out. 
+location - pune.
+package -4-5 lpa.
+
+candidate should have basic knowledge of react. 
+
+eligible candidates can contact me/hr.  
+
+Sep 04 - 11:46 am
+######Note#######
+
+Those(with any degree, stream, passout year) who know React can give a mock to me so that i can consider you for upcoming requirements.  
+
+Sep 04 - 11:54 am
+
+1.	**Function Declaration (Say Hello)**:  
+   Write a function named `sayHello`. This function should print the message “Hello, world!” when you call it. Call the function once, then call it two more times to say hello three times.  
+   **Example**:  
+   ```javascript
+   sayHello(); // Logs “Hello, world!”
+   ```
+
+2.	**Function Expression (Say Goodbye)**:  
+   Create a function that says “Goodbye!” but don’t use the normal function syntax. Instead, assign it to a variable named `farewell`. Then, call this variable like a function to say goodbye.  
+   **Example**:  
+   ```javascript
+   Farewell(); // Logs “Goodbye!”
+   ```
+
+3.	**Arrow Function (Cheer Up)**:  
+   Create an arrow function called `cheerUp`. This function should print the message “Cheer up, buddy!”. Call this function to give yourself some motivation.  
+   **Example**:  
+   ```javascript
+   cheerUp(); // Logs “Cheer up, buddy!”
+   ```
+
+4.	**Function with a Name (Introduce Yourself)**:  
+   Write a function named `introduce`. It should take one thing: your name (as a word). When you call this function, it should print “Hello, my name is [your name]!” but replace “[your name]” with the actual name you give it.  
+   **Example**:  
+   ```javascript
+   Introduce(“Alice”); // Logs “Hello, my name is Alice!”
+   ```
+
+5.	**Function Expression (Order Pizza)**:  
+   Write a function that orders pizza by saying “Ordered a [flavor] pizza!”, but don’t use the regular function syntax. Assign the function to a variable called `placeOrder`, and it should accept a flavor like “cheese” or “pepperoni”. Call the function with your favorite flavor.  
+   **Example**:  
+   ```javascript
+   placeOrder(“cheese”); // Logs “Ordered a cheese pizza!”
+   ```
+
+6.	**Arrow Function (Greet a Person)**:  
+   Create an arrow function called `greetPerson`. This function should accept one thing: the name of a person. When you call it, it should say “Hi, [name]!” with the person’s name. Call it with different names.  
+   **Example**:  
+   ```javascript
+   greetPerson(“Bob”); // Logs “Hi, Bob!”
+   ```
+
+7.	**Function Calling Another Function (Morning Routine)**:  
+   Write a function called `startMorning` that calls another function called `makeCoffee`. `makeCoffee` should print “Making coffee…”. Call `startMorning` to pretend you’re getting ready for the day.  
+   **Example**:  
+   ```javascript
+   startMorning(); // Logs “Making coffee…”
+   ```
+
+8.	**Higher-Order Function (Morning Routine)**:  
+   Create a function called `morningRoutine`. This function should take two other functions as input: `brushTeeth` and `getDressed`. When you call `morningRoutine`, it should call both of these functions in order. Call `morningRoutine` to simulate getting ready for the day.  
+   **Example**:  
+   ```javascript
+   morningRoutine(brushTeeth, getDressed); // Logs both tasks
+   ```
+
+9.	**Callback Function (Take Action)**:  
+   Write a function called `takeAction` that takes a callback function. When `takeAction` is called, it should print “Action in progress!” and then run the callback function, which prints “Action completed!”.  
+   **Example**:  
+   ```javascript
+   takeAction(function() {
+       console.log(“Action completed!”);
+   }); // Logs “Action in progress!” then “Action completed!”
+   ```
+
+10.	**Arrow Function (Calculate Area)**:  
+   Create an arrow function called `calculateArea`. It should take two numbers, length and width, and print “The area is [length * width]”. Call it with different numbers to see the area of various rectangles.  
+   **Example**:  
+   ```javascript
+   calculateArea(5, 4); // Logs “The area is 20”
+   ```
+
+11.	**Higher-Order Function (Lunch Break)**:  
+   Write a function called `lunchBreak` that accepts two functions: `eatLunch` and `takeNap`. `lunchBreak` should call both functions in order. Call `lunchBreak` to simulate your relaxing lunch break.  
+   **Example**:  
+   ```javascript
+   lunchBreak(eatLunch, takeNap); // Logs both tasks
+   ```
+
+12.	**Function Declaration (Support Team)**:  
+   Write a function called `supportTeam` that prints “Go, team!” every time you call it. Call it a few times to pretend you’re cheering at a game.  
+   **Example**:  
+   ```javascript
+   supportTeam(); // Logs “Go, team!”
+   ```
+
+13.	**Arrow Function (Weather Update)**:  
+   Create an arrow function called `weatherUpdate`. This function should print “The weather is great today!”. Call it to enjoy a fake weather report.  
+   **Example**:  
+   ```javascript
+   weatherUpdate(); // Logs “The weather is great today!”
+   ```
+
+14.	**Function Expression (Talk to Pet)**:  
+   Create a function expression called `talkToPet` that prints “Who’s a good pet?”. Assign it to a variable `petTalk` and call it when you feel like talking to your pet.  
+   **Example**:  
+   ```javascript
+   petTalk(); // Logs “Who’s a good pet?”
+   ```
+
+15.	**Function with Multiple Parameters (Favorite Movie)**:  
+   Write a function called `favoriteMovie` that takes two things: a movie name and the year it came out. When you call it, it should say “My favorite movie is [movie] from [year]”.  
+   **Example**:  
+   ```javascript
+   favoriteMovie(“The Matrix”, 1999); // Logs “My favorite movie is The Matrix from 1999”
+   ```
+
+16.	**Function Calling Another Function (Daily Schedule)**:  
+   Create a function called `dailySchedule` that calls three other functions: `morningRoutine`, `work`, and `eveningChill`. Each of these should print a message. Call `dailySchedule` to go through your fake day.  
+   **Example**:  
+   ```javascript
+   dailySchedule(); // Logs tasks for morning, work, and evening
+   ```
+
+17.	**Higher-Order Function (Exercise Routine)**:  
+   Write a function called `exerciseRoutine` that takes two other functions: `stretch` and `run`. Each function should print what you’re doing (stretching and running). Call `exerciseRoutine` to start your workout.  
+   **Example**:  
+   ```javascript
+   exerciseRoutine(stretch, run); // Logs both tasks
+   ```
+
+18.	**Arrow Function (Motivational Speaker)**:  
+   Create an arrow function called `motivateMe` that prints “You can do it!”. Call it every time you feel like giving up.  
+   **Example**:  
+   ```javascript
+   motivateMe(); // Logs “You can do it!”
+   ```
+
+19.	**Function Expression (Order Ice Cream)**:  
+   Create a function expression called `orderIceCream` that takes one thing: a flavor of ice cream. It should say “Ordering [flavor] ice cream!”. Assign this function to a variable `iceCreamTime` and call it with your favorite ice cream flavor.  
+   **Example**:  
+   ```javascript
+   iceCreamTime(“vanilla”); // Logs “Ordering vanilla ice cream!”
+   ```
+
+20.	**Function Declaration (Night Routine)**:  
+   Write a function called `nightRoutine`. This function should print “Brushing teeth” and “Going to bed” when you call it. Call it to pretend you’re getting ready for bed.  
+   **Example**:  
+   ```javascript
+   nightRoutine(); // Logs “Brushing teeth” and “Going to bed”
+   ```
+ 
+
+Sep 05 - 4:06 pm
+i'll check these tasks on saturday.  
+
+Sep 05 - 4:06 pm
+#JavaScript Notes###
+
+
+#History
+1.	JavaScript was first created by Brendan Eich in just 10 days in May 1995 while he was working at Netscape Communications Corporation.
+2.	The initial release was called Mocha and later renamed to LiveScript, and finally JavaScript.
+3.	 Initially, JavaScript was designed to be a lightweight scripting language for adding interactivity to web pages.
+4.	At the time, web pages were mostly static and lacked interactivity, and the only way to add dynamic content to a web page was to use a server-side programming language like PHP or Perl.
+5.	However, this approach had limitations and was not well-suited to creating responsive, interactive user interfaces.
+6.	The idea behind JavaScript was to create a scripting language that could be executed on the client-side (in the user's web browser) and could be used to add interactivity to web pages.
+7.	This allowed web developers to create more engaging and interactive websites, without having to rely on server-side programming languages.
+8.	Its popularity grew rapidly as it was one of the few languages that could be executed directly in web browsers, without the need for additional plugins or software.
+9.	In 1996, Microsoft released JScript as a competitor to JavaScript, which was their own implementation of the language for their Internet Explorer browser.
+10.	 However, JScript was very similar to JavaScript, and the two languages were largely interchangeable.
+11.	Over time, JavaScript has evolved and grown to become a full-fledged programming language, capable of creating complex applications on both the client and server-side.
+12.	The development of JavaScript has been heavily influenced by a number of factors, including the emergence of new web technologies, changes in programming paradigms, and the rise of new development frameworks and libraries.
+13.	Today, JavaScript is one of the most widely used programming languages in the world, powering many of the most popular websites and web applications.
+14.	It continues to evolve and adapt to the changing needs of the web, with new features and capabilities being added on a regular basis.
+
+	
+#Introduction
+1. Javascript is scripting and programming language.
+2. It is purely object based language.This means that variables, functions, and even primitive data types like numbers and strings are object,everything is object in javascript.
+3. It is dynamically typed language , it means type of value stored in memory block is checked at runtime because of this nature we can store any type of value in variable.
+4. It is object oriented programming language , it means we can create our own object. (It is not purely object oriented programming language)
+5. It is interepreted language
+6. It is synchronous language , it has single threaded architecture. Instructions get executed line by line.
+7. It is single call stack
+8. Mainly introduced to instruct the browser
+9. Js helps to provide behavior and functionality to webpage and helps to develop dynamic webpage
+10. Every browser have js engine to run js code. Therefore browser become environment to run js code.
+11. To run Js code outside browser we just need Javascript runtime environment (Node).
+12. Js is used to add functionality to website.
+
+
+#Javascript Runtime Environment
+1. JavaScript Runtime Enviroment provides the enviroment where we can run our JavaScript code.
+2. Two javascript runtime enviroments are :
+I. Browser
+II. Node.js
+#Browser
+1. A browser is a software application that is used to access and view information on the World Wide Web (WWW).
+2. It allows users to interact with web pages, view multimedia content, and surf the internet.
+3. The Browser acts as a JavaScript runtime environment because it includes a JavaScript engine that interprets and executes JavaScript code
+#JavaScript Engine
+1. A JavaScript engine is a computer program that executes JavaScript code.
+2. It is a core component of web browsers, server-side JavaScript platforms, and other JavaScript-based environments.
+#Some Popular JavaScript Engines Include:
+1. V8 (fastest Js engine): developed by Google, used in Google Chrome and Node.js
+2. SpiderMonkey : developed by Mozilla, used in Firefox
+3. JavaScriptCore : developed by Apple, used in Safari
+4. Chakra : developed by Microsoft, used in Microsoft Edge and Internet Explorer (legacy)
+#Node.Js
+1. The main reason of javascript popularity.
+2. Node.js is a software application that executes JavaScript code. It is not a framework or a library.
+3. It allows developers to run JavaScript code outside of a web browser, such as on a server or command-line interface.
+4. Node.js uses the V8 JavaScript engine, which is also used in Google Chrome.
+5. It is built on top of an event-driven, non-blocking I/O model, which allows it to handle large numbers of simultaneous connections without blocking the execution of other code.
+6. This makes it well-suited for building scalable, high-performance applications that can handle a large amount of traffic.
+7. Because after introduction of Nodejs, we were able to run javascript anywhere like in web servers, as command-line tools, desktop applications, and even IoT (Internet of Things) devices.
+
+
+Features of JavaScript
+
+1. **Scripting Language**:
+   - **What it means**: JavaScript is used to write small programs that automate tasks in web pages.
+   - **Why we call it that**: It helps make web pages interactive. For example, it can change text when you click a button or show a pop-up message.
+
+2. **High-Level Language**:
+   - **What it means**: JavaScript is easy for humans to read and write.
+   - **Why we call it that**: You don’t need to know the details of how the computer works to use JavaScript. It uses simple commands and is close to human language, making it accessible for beginners.
+
+3. **Interpreted Language**:
+   - **What it means**: JavaScript code runs directly in the web browser without needing to be converted into another form first. It has interpretor which runs the code line by line.
+   - **Why we call it that**: You can see the results of your code immediately in the browser. This makes it easy to test and fix your code quickly.
+
+4. **Synchronous Language**:
+   - **What it means**: JavaScript runs commands one after another, in order.
+   - **Why we call it that**: When you write JavaScript code, it does each task step by step, making it easier to understand what’s happening in your program.
+
+5. **Object-Based Language**:
+   - **What it means**: JavaScript uses objects to store and organize data and functions. 
+   - **Why we call it that**: In javaScript most of the things are are internally objects. Objects help keep related code together. For example, you can have an object for a car that includes properties like color and methods like drive.
+
+6. **Object-Oriented Language**:
+   - **What it means**: JavaScript supports creating complex structures using classes and objects.
+   - **Why we call it that**:We can create our own objects using classes in javascript.
+
+7. **Loosely Typed Language**:
+   - **What it means**: In JavaScript, you don’t have to specify what type of data (like a number or text) a variable holds. Also we don’t need to follow the syntax very strictly eg. No need to write semicolons. 
+   - **Why we call it that**: This makes writing code faster and easier because you don’t have to worry about declaring data types and don’t need to strictly follow the syntax. You can just start using variables right away.
+
+8. **Dynamically Typed Language**:
+   - **What it means**: The type of data a variable holds can change as your program runs.
+   - **Why we call it that**: You can have a variable that starts as a number and then later hold a string (text) without any extra work. This flexibility makes JavaScript powerful for writing dynamic programs.
+
+9. **Single-Threaded Language**:
+   - **What it means**: JavaScript can only do one thing at a time.
+   - **Why we call it that**: This simplicity makes it easier to write and understand JavaScript code. Even though it does one task at a time, JavaScript can handle many tasks quickly by using techniques like callbacks and promises.
+
+
+#Token
+1. It is the smallest unit of programming language.
+2. We have 5 types of operators,punctuators,keywords ,identifiers , literals.
+#Operators
+In JavaScript, operators are used to perform operations on variables and values. Here are the main types of operators in JavaScript, along with examples and brief descriptions:
+
+### 1. *Arithmetic Operators*
+Arithmetic operators are used to perform arithmetic calculations.
+
+- + (Addition): Adds two values.
+  javascript
+  let sum = 5 + 3; // sum is 8
+  
+- - (Subtraction): Subtracts the second value from the first.
+  javascript
+  let difference = 10 - 4; // difference is 6
+  
+- * (Multiplication): Multiplies two values.
+  javascript
+  let product = 6 * 7; // product is 42
+  
+- / (Division): Divides the first value by the second.
+  javascript
+  let quotient = 20 / 5; // quotient is 4
+  
+- % (Modulus): Returns the remainder of a division.
+  javascript
+  let remainder = 10 % 3; // remainder is 1
+  
+- ** (Exponentiation): Raises the first value to the power of the second.
+  javascript
+  let power = 2 ** 3; // power is 8
+  
+
+### 2. *Assignment Operators*
+Assignment operators are used to assign values to variables.
+
+- =: Assigns a value to a variable.
+  javascript
+  let x = 10;
+  
+- +=: Adds and assigns the result.
+  javascript
+  x += 5; // x is now 15
+  
+- -=: Subtracts and assigns the result.
+  javascript
+  x -= 3; // x is now 12
+  
+- *=: Multiplies and assigns the result.
+  javascript
+  x *= 2; // x is now 24
+  
+- /=: Divides and assigns the result.
+  javascript
+  x /= 4; // x is now 6
+  
+- %=: Takes modulus and assigns the result.
+  javascript
+  x %= 5; // x is now 1
+  
+- **=: Raises to power and assigns the result.
+  javascript
+  x **= 3; // x is now 1
+  
+
+### 3. *Comparison Operators*
+Comparison operators are used to compare two values.
+
+- == (Equal to): Checks if two values are equal.
+  javascript
+  5 == '5'; // true
+  
+- === (Strict equal to): Checks if two values are equal and of the same type.
+  javascript
+  5 === '5'; // false
+  
+- != (Not equal to): Checks if two values are not equal.
+  javascript
+  5 != '5'; // false
+  
+- !== (Strict not equal to): Checks if two values are not equal and/or not of the same type.
+  javascript
+  5 !== '5'; // true
+  
+- > (Greater than): Checks if the left value is greater than the right.
+  javascript
+  10 > 5; // true
+  
+- < (Less than): Checks if the left value is less than the right.
+  javascript
+  10 < 5; // false
+  
+- >= (Greater than or equal to): Checks if the left value is greater than or equal to the right.
+  javascript
+  10 >= 10; // true
+  
+- <= (Less than or equal to): Checks if the left value is less than or equal to the right.
+  javascript
+  10 <= 5; // false
+  
+
+### 4. *Logical Operators*
+Logical operators are used to combine multiple boolean expressions.
+
+- && (Logical AND): Returns true if both operands are true.
+  javascript
+  true && false; // false
+  
+- || (Logical OR): Returns true if at least one operand is true.
+  javascript
+  true || false; // true
+  
+- ! (Logical NOT): Inverts the boolean value.
+  javascript
+  !true; // false
+  
+
+### 5. *Bitwise Operators*
+Bitwise operators are used to perform bit-level operations.
+
+- & (AND): Returns a 1 in each bit position for which the corresponding bits of both operands are 1.
+  javascript
+  5 & 1; // 1 (0101 & 0001)
+  
+- | (OR): Returns a 1 in each bit position for which the corresponding bits of either or both operands are 1.
+  javascript
+  5 | 1; // 5 (0101 | 0001)
+  
+- ^ (XOR): Returns a 1 in each bit position for which the corresponding bits of either but not both operands are 1.
+  javascript
+  5 ^ 1; // 4 (0101 ^ 0001)
+  
+- ~ (NOT): Inverts the bits of its operand.
+  javascript
+  ~5; // -6 (not 0101)
+  
+- << (Left shift): Shifts bits to the left by the specified number of positions.
+  javascript
+  5 << 1; // 10 (0101 << 1)
+  
+- >> (Sign-propagating right shift): Shifts bits to the right, preserving the sign.
+  javascript
+  5 >> 1; // 2 (0101 >> 1)
+  
+- >>> (Zero-fill right shift): Shifts bits to the right, filling with zeros.
+  javascript
+  5 >>> 1; // 2 (0101 >>> 1)
+  
+
+### 6. *String Operators*
+String operators are used to manipulate strings.
+
+- + (Concatenation): Joins two or more strings.
+  javascript
+  let greeting = 'Hello' + ' ' + 'World'; // "Hello World"
+  
+- +=: Appends the right operand to the left operand.
+  javascript
+  let text = 'Hello';
+  text += ' World'; // "Hello World"
+  
+
+### 7. *Conditional (Ternary) Operator*
+The ternary operator is a shorthand for an if-else statement.
+
+- condition ? expr1 : expr2: Returns expr1 if the condition is true, otherwise returns expr2.
+  javascript
+  let result = (5 > 3) ? 'Greater' : 'Lesser'; // "Greater"
+  
+
+### 8. *Type Operators*
+Type operators are used to determine the type of a variable or value.
+
+- typeof: Returns the type of a variable or expression.
+  javascript
+  typeof 42; // "number"
+  
+- instanceof: Tests whether an object is an instance of a particular class or constructor.
+  javascript
+  let arr = [];
+  arr instanceof Array; // true
+  
+
+These operators are essential for performing various operations in JavaScript, from simple arithmetic to complex logical expressions.
+
+
+
+#Punctuators
+1. These are symbols used to group, separate, or punctuate code.
+2. Examples include parentheses (), curly braces {}, square brackets [], commas ,, semicolons ;, and the period . (used to access object properties).
+#Keywords
+1. These are reserved words that have a special meaning in the language.
+2. Examples like if, else, for, while, function, and return,etc.
+#Identifiers
+1. These are user given names to variables, functions, and other objects in the code.
+2. Identifier name can not start with number.
+3. Identifier name should not be a keyword
+4. If Identifier is of multiple word, instead of using space, we have to use underscore.
+5. identifier name should not have special character but can start with underscore(_) and dollar($).
+#Literals
+1. These are values used in our program like number(2),string('hello world') , etc.
+#Types Of Literals / Datatypes
+1. Primitive
+2. Non-Primitive
+#Primitive Literals
+1. In JavaScript, a primitive data type is a data type that represents a single value.
+2. JavaScript treats primitive values as immutable values, means that their value cannot be changed. Instead, when you perform an operation that appears to modify a primitive value, you are actually creating a new object with new value and assigning it to a variable. Here , variable will hold the reference of latest object with new value and the previous object with it's value will garbage collected.
+3. We have 8 primitive types of literals -number , bigint , boolean , nan , undefined , null , symbol , string..
+#Primitive Datatypes
+1. Number
+1. This data type represents a numeric value. It can store both integers and floating-point values.
+2. It's range is from -253-1 to 2 53-1 .
+2. BigInt
+1. It is used to represent integers that are larger than the Number data type
+2. It's range is more than -253-1 and more than 253-1 .
+3. To represent the given integer as bigint , we have to suffix 'n' after the integer.
+Example : 10 is number type and 10n is bigint type.
+3. Boolean
+1. This datatype represents a logical entity and can only have two values: true or false.
+4. Null
+1. This datatype represents a null or empty value.
+2. It is used to mark the memory block empty intentionally.
+5. Undefined
+1. This datatype represents an uninitialized value.
+2. When memory block is unintialized , js engine implicitly initialize that memory block with 'undefined' in variable phase.
+3. For variable declared with 'var' it will initialize it in variable phase
+4. For variable declared with 'let' and 'const' it will not initialize it in variable phase.
+6. NaN
+1. It stands for 'not a number'.
+2. It represents computational error.
+3. When js engine is not able compute result it returns 'NaN'.
+4. Example : "Hello" + 1 = Hello1 and "Hello" - 1 = NaN
+In first case , js engine concatnated the string with number.
+In second case , js engine is able to compute anything because we can not subtract 1 from "Hello" string therefore it returns NaN.
+7. Symbol
+1. It represents a unique identifier.
+2. We have Symbol function which is used to generate unique idenitifiers in our program.
+8. String
+1. It represents collection of characters.
+2. We have two types of strings :- single line and multi line string.
+3. Single line string :
+- It is enclosed by single quotes (' ') and double quotes (" ") .
+- It doesnot allow line breaks and whitespaces.
+4. Multi line string :
+- It is enclosed by backticks (` `).
+- It allow line breaks and whitespaces.
+- It is also called as template string.
+- Template strings allow us to insert variables and expressions directly in the string using ` ${ variable_name } ` notation.
+#Non-Primitive Literals
+1. In JavaScript, a non primitive data type is a data type that represents multi value.
+2. JavaScript treats non-primitive values as mutable values, means that their value can be changed. When we try to update a value , new object is not created . Here value is changed in the same memory block.
+3. Non-primitive datatype : object ,array , etc
+ 
+
+Sep 05 - 4:11 pm
+#Scope
+1. Scope defines the visibility or accessibility of a variable.
+#We Have Two Scopes
+1. Global Scope
+2. Local Scope
+#Global Scope
+1. The variable declared in global scope can be accessed anywhere in the program.
+2. Global scope has the highest accessibility.
+3. Variable declared with var goes in Global scope.
+#Local Scope
+1. Local/block scope/function scope
+2. The variable declared in local scope can be accessed in that block only i.e. we can not access the variable from outside.
+3. JS engine creates local scope for functions and blocks.
+4.
+Function's Local Scope
+- Local scope created for function is refered as function scope.
+- Variable's declared in function's scope can not be accessed from outside.
+•	
+Block's Local Scope
+- Local scope created for block is refered as block scope.
+- Variable's declared in block scope can not be accessed from outside.
+- But only variables declared with var are accessible from outside of block.
+
+Note: Variables declared with let and const are also locally scoped.
+Firefox represent it as - Block scope.
+Chrome represent it as - Script scope.
+
+
+
+#Global Execution Context
+1. When we give JS code to the browser, JS Engine will allocate (create) a global memory block for the execution of JavaScript code, called Global Execution Context.
+2. Here, we have a window variable which have reference of Global Execution Context.
+#Window Variable
+1. Window variable or window object -> everything is object in js.
+2. Window is a global variable which store the reference of Global Execution Context
+3. Window object is also known as Global Object because it is available anywhere in the program.
+4. Window object have pre-defined state and behaviour.
+5. Variable declared with var always goes to global scope and can be accessible by window object.
+6. Any variable created in global scope will be addes in Window object implicitly by JS Engine.
+#JavaScript Code Run In Two Phases
+1. Variable phase
+2. Execution phase
+#Variable Phase
+1. In variable phase, JS Engine will check the complete JS Code and it will search for variable declaration statement.
+2. If variable is declared then JS Engine allocate (provide) memory for them.
+3. Variable declared with var will be initialized storing "undefined" at the time of memory block creation.
+Variable declared with let and const will remain uninitialized (empty) at the time of memory block creation.
+#Execution Phase
+1.	 In Execution phase, JS Engine will execute the instruction line-by-line.
+
+
+
+#Var
+1. Variable declared with var goes to global scope.
+2. We can redeclare variable with same name in same scope.
+3. We can update the value of variable.
+4. We can declare variable without initialization.
+5. Variable declared with var , can be hoisted.
+6. Variable declared inside block , will go to global scope.
+7. Variable declared inside function , will not go to global scope. It will be accessible inside function only.
+#Let
+1. Variable declared with let is block scoped.
+2. We cannot redeclare variable with same name in same scope.
+3. We can update the value of variable.
+4. We can declare variable using let without initialization. But js engine will keep that memory block uninitialized (empty) untill js engine reads declaration statement in execution phase.
+5. Because let variable is uninitialized (empty) in variable phase , it belongs to Temporal Dead Zone.
+6. The variable declared using let does not belongs to global scope , we cannot access them with the help of window variable.
+7. The variable declared using let is hoisted and belongs to temporal deadzone. Therefore it cannot be used before initialization (because at that moment it is uninitialized - TDZ) .
+8. Variable declared inside function will be accessible inside function only.
+#Const
+1. Variable declared with const is block scope.
+2. We cannot redeclare variable with same name in same scope.
+3. The value of variable can not be modified.
+4. We can not declare const without initialization.
+5. The variable declared using const is hoisted and belongs to temporal deadzone. Therefore it cannot be used before initialization (because at that moment it is uninitialized - TDZ) .
+6. The variable declared using const inside block ,does not belongs to global scope we cannot use them with the help of window.
+7. Variable declared inside function will be accessible inside function only.
+ 
+
+Sep 05 - 4:11 pm
+#Practice Questions
+1.	
+console.log("start");
+let a = 10;
+var b = 20;
+const c = 30;
+{
+  let a = 100;
+  var b = 200;
+  const c = 300;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+console.log(a);
+console.log(b);
+console.log(c);
+console.log("end");
+2.	
+
+console.log("start");
+let a = 10;
+console.log(b);
+{
+  var b = 200;
+}
+console.log(a);
+console.log(b);
+console.log("end");
+3.	
+console.log("start");
+let a = 10;
+{
+  console.log(a);
+  let a = 10;
+}
+console.log(a);
+console.log(b);
+console.log("end");
+4.	
+
+console.log("start");
+var b = 20;
+const c = 30;
+{
+  let a = 100;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+}
+console.log(a);
+console.log(b);
+console.log("end");
+5.	
+
+console.log("start");
+let a = 10;
+var b = 20;
+const c = 30;
+{
+  let a = 10;
+  console.log(a);
+  const c = 300;
+  console.log(b);
+  b = 200;
+  c = 30;
+  console.log(b);
+}
+console.log(a);
+console.log(b);
+console.log("end");
+ 
+
+Sep 05 - 4:12 pm
+#Functions
+1. Function is object.
+2. Function is a block of instruction which is used to perform a specific task.
+3. A function get executed only when it is called.
+4. The main advantage of function is we can achieve code reusability.
+5. To call a function we need its reference and ().
+6. Name of function is variable which holds the reference of function object.
+7. Creating a function using function keyword supports function hoisting.
+8. Therefore we can also call a function before function declaration.
+9. When we try to log function name the entire function defination is printed.
+10. The scope within function block is known as local scope.
+11. Any member with local scope cannot be used outside the function block.
+12. A parameter of function will have local scope.
+13. Variable written inside function even using var have local scope.
+14. Inside a function we can use the members of global scope.
+15. In javascript 'this' is a property of every function.(every function will have 'this' Keyword except arrow function)
+#Parameter
+1. The variables declared in the function defination is known as parameters.
+2. The parameters have local scope (can be used only inside function body).
+3. Parameters are used to hold the values passed by caller (or calling statement).
+#Arguments
+1. The values passed in the method call statement is known as arguments.
+2. Note : An argument can be a literal, variable or an expression which gives a results.
+#Return Keyword
+1. It is a keyword used as control transfer statement in a function.
+2. Return will stop the execution of the function and transfer control along with data to the caller.
+#Ways To Create Functions
+1. Function declaration statement : Create using function keyword
+1. 
+Syntax :
+
+function func_variable(parameters) {    
+  //statements
+}
+func_variable()  
+2. 
+Example : Create a function 'greet' which should print a message "Good Morning" when it is called.
+
+function func_variable(parameters) {    
+  //statements
+}
+func_variable()  
+3. 
+Function can be Hoisted.
+
+//Here, we are accessing function before it's declaration statement.
+
+greet();
+function greet() {
+  console.log("Good Morning");
+}
+
+output : Good Morning
+4. Function does not belongs to temporal dead zone.
+2. Function as expression / expression function
+1. Function which is passed to an variable as a value is called as first class function.
+2. Function can not be Hoisted because it is object is created in execution phase.
+3. Function does not belongs to temporal dead zone
+#Functional Programming
+1. Functional Programming is a programming technique where we pass a function along with a value to another function.
+2. In this approach, we generate Generic Function. Here function task is not predefined. It perform multiple task not only single task
+3. The Function which accept another function as a parameter or return a function is known as 'Higher Order Function'.
+4. The Function which is passed to another function or the function which is returned by another function is known as 'Callback Function'.
+#Types Of Functions
+1. Function decalaration statement : Using function keyword
+2. Function as expression / expression function
+3. Immediate Invoke Function (IIF)
+1. when a function is called as soon as it's object is created is known as Immediate Invoke Function.
+2. We have to write the function inside the paranthesis to group it. [using Group operator -> (function code) ].
+3. The function is not visible(available) outside the scope.
+4. After grouping it, we have to use paranthesis to call this function.
+5. Immediate Invoke Function execute only once.
+4. Arrow Function
+1. The main function of arrow function is to reduce the function syntax.
+2. Arrow Function is introduced in ES6.
+3. If we have only single parameter, it is not necessary to use paranthesis for paramenter.
+4. If function have single statement, then block (curly braces) is optional.
+5. It does not have its own 'this' property.
+6. Implicit return :- If there is only one statement and If block is not created then JS Engine will return that statement automatically.
+7. Explicit return :- If block is created and function is not returning any value, JS Engine will return undefined. To return a value Explicitly from block, we have to use return keyword.If block is created then we have to use return keyword to return value otherwise JS Engine will return undefined.
+5. Higher Order Function
+1. The Function which accept another function as a parameter or return a function is known as 'Higher Order Function'.
+6. Callback Function
+1. The Function which is passed to another function or the function which is returned by another function is known as 'Callback Function'.
+#Nested Function
+1. The function inside another function is called as nested function.
+2. 
+Example :
+
+function outer(){
+      function inner(){
+      }
+      return inner
+}
+3. The outer function is known as parent and the inner function is known as child.
+4. The inner function is local to outer function, it cannot be accessed from outside.
+5. 
+To use inner function outside, the outer function must return the reference of inner function.
+
+function outer(){
+      function inner(){
+      }
+      return inner
+}
+
+We can now call inner function from outside as follows:
+
+1st Way:
+
+
+let fun=outer();
+fun();   // -----> inner() is called
+
+2nd Way:
+
+outer()();   // -----> inner() is called
+ 
+
+Sep 05 - 4:13 pm
+i have shared 20 questions on 5th sept. i want these questions to be solved on paper sheets. tomorrow i will collect these sheets. keep your name and mobile number mentioned on the top of the sheet. 
+
+Sep 08 - 4:17 pm
+
+1.	**Callback Function (Morning Alarm)**:  
+   Write a function `setAlarm` that takes a callback function. Print “Alarm set for 7 AM.” Then, use the callback to print a wake-up message like “Time to wake up!” when the alarm goes off.  
+   **Example**:  
+   ```javascript
+   setAlarm(wakeUp); // “Time to wake up!”
+   ```
+
+2.	**Callback Function (Order Groceries Online)**:  
+   Create a function `placeGroceryOrder` that accepts a callback. Print “Order placed for groceries.” Then, use the callback to notify when the groceries are delivered.  
+   **Example**:  
+   ```javascript
+   placeGroceryOrder(deliveryNotification); // “Your groceries have arrived!”
+   ```
+
+3.	**Callback Function (Cook Dinner)**:  
+   Write a function `startCooking` that takes a callback function. Print “Dinner is cooking…”. Afterward, call the callback to announce when the meal is ready.  
+   **Example**:  
+   ```javascript
+   startCooking(dinnerReady); // “Dinner is ready!”
+   ```
+
+4.	**Callback Function (Exercise Routine)**:  
+   Create a function `startExercise` that accepts a callback. First, print “Starting workout…”. Then, call the callback to notify when the workout is completed.  
+   **Example**:  
+   ```javascript
+   startExercise(completeWorkout); // “Workout completed!”
+   ```
+
+5.	**Callback Function (Charge Your Phone)**:  
+   Write a function `chargePhone` that accepts a callback. Print “Charging phone…”. Once it’s done charging, use the callback to print “Phone fully charged.”  
+   **Example**:  
+   ```javascript
+   chargePhone(fullCharge); // “Phone fully charged!”
+   ```
+
+6.	**Callback Function (Laundry)**:  
+   Create a function `startLaundry` that takes a callback. First, print “Laundry started…”. After the cycle completes, use the callback to notify “Laundry done!”.  
+   **Example**:  
+   ```javascript
+   startLaundry(laundryDone); // “Laundry done!”
+   ```
+
+7.	**Callback Function (Send an Email)**:  
+   Write a function `sendEmail` that accepts a callback. Print “Sending email…”. After the email is sent, call the callback to print “Email sent successfully!”.  
+   **Example**:  
+   ```javascript
+   sendEmail(emailSent); // “Email sent successfully!”
+   ```
+
+8.	**Callback Function (Start a Zoom Meeting)**:  
+   Create a function `startMeeting` that takes a callback function. Print “Zoom meeting starting…”. After that, use the callback to notify when the meeting has started.  
+   **Example**:  
+   ```javascript
+   startMeeting(meetingStarted); // “Meeting has started!”
+   ```
+
+9.	**Callback Function (Car Service Reminder)**:  
+   Write a function `carService` that accepts a callback. Print “Car service scheduled…”. Once the car service is complete, call the callback to notify “Car service complete.”  
+   **Example**:  
+   ```javascript
+   carService(serviceComplete); // “Car service complete.”
+   ```
+
+10.	**Callback Function (Coffee Break)**:  
+    Create a function `brewCoffee` that accepts a callback. Print “Brewing coffee…”. After the coffee is brewed, call the callback to notify “Coffee is ready!”.  
+    **Example**:  
+    ```javascript
+    brewCoffee(coffeeReady); // “Coffee is ready!”
+    ```
+
+ 
+
+Sep 09 - 12:52 pm
+
+**1. Repeated Call**  
+
+Write a function `repeatCall` that accepts a callback and a message string. The callback should call the provided message twice, returning the result as a single string.
+
+
+
+**Example:**  
+
+`repeatCall(callback, ‘Let’s go!’)`  
+
+`callback` should return: `”Let’s go! Let’s go!”`
+
+
+**2. Simple Decision Maker**  
+Write a function `decideAction` that accepts a callback function and a string (action). The callback should return `”Approved”` if the action is `”proceed”`, and `”Denied”` otherwise.
+
+**Example:**  
+`decideAction(callback, ‘proceed’)`  
+`callback` should return: `”Approved”`
+
+
+**3. Repeated Message**  
+Write a function `repeatMessage` that accepts a callback and a message string. The callback should return the message repeated twice.
+
+**Example:**  
+`repeatMessage(callback, ‘Goodbye’)`  
+`callback` should return: `”Goodbye Goodbye”`
+
+
+**4. Toggle Switch**  
+Write a function `toggleSwitch` that accepts a callback and a string (either `”on”` or `”off”`). The callback should return `”Switched on”` if the string is `”off”` and `”Switched off”` if the string is `”on”`.
+
+**Example:**  
+`toggleSwitch(callback, ‘off’)`  
+`callback` should return: `”Switched on”`
+
+
+
+
+**5. Yes or No Decision**  
+Write a function `askYesOrNo` that accepts a callback function and a response string (`”yes”` or `”no”`). The callback should return `”Confirmed”` for `”yes”` and `”Rejected”` for `”no”`.
+
+**Example:**  
+`askYesOrNo(callback, ‘yes’)`  
+`callback` should return: `”Confirmed”`
+
+
+**6. Reverse the Text**  
+Write a function `reverseText` that accepts a callback and a string. The callback should return the string reversed.
+
+**Example:**  
+`reverseText(callback, ‘world’)`  
+`callback` should return: `”dlrow”`
+
+
+**7. Personalized Farewell**  
+Write a function `createFarewell` that accepts a callback and a name string. The callback should return `”Goodbye, [name]!”` where `[name]` is replaced with the provided name.
+
+**Example:**  
+`createFarewell(callback, ‘Bob’)`  
+`callback` should return: `”Goodbye, Bob!”`
+
+
+**8. Decision Logic**  
+Write a function `decisionMaker` that accepts a callback and a string (`”start”` or `”stop”`). The callback should return `”Starting…”` if the string is `”start”` and `”Stopping…”` if the string is `”stop”`.
+
+**Example:**  
+`decisionMaker(callback, ‘start’)`  
+`callback` should return: `”Starting…”`
+
+
+
+ 
+
+Sep 10 - 3:36 pm
+simple 8 questions for tomorrow's class.  
+
+Sep 10 - 3:37 pm
+
+
+Hoisting
+Hoisting in JavaScript means that variable and function declarations are moved to the top of their scope before the code runs. This allows you to use them before they are actually declared in your code.
+
+ Variable Hoisting
+
+1. **var**
+   - Variables declared with `var` are moved to the top of their function scope.
+   - They start as `undefined` until the line of code where they are assigned a value.
+
+   ```javascript
+   console.log(x); // undefined
+   var x = 5;
+   console.log(x); // 5
+   ```
+
+2. **let** and **const**
+   - Variables declared with `let` and `const` are also moved to the top of their block scope.
+   - They are not initialized until the code reaches their declaration.
+   - Using them before they are declared gives a `ReferenceError`.
+
+   ```javascript
+   console.log(y); // ReferenceError: Cannot access 'y' before initialization
+   let y = 10;
+   console.log(y); // 10
+
+   console.log(z); // ReferenceError: Cannot access 'z' before initialization
+   const z = 15;
+   console.log(z); // 15
+   ```
+
+#### Function Hoisting
+
+1. **Function Declarations**
+   - Function declarations are moved to the top of their scope.
+   - You can call these functions before they are declared in the code.
+
+   ```javascript
+   console.log(sum(2, 3)); // 5
+   function sum(a, b) {
+     return a + b;
+   }
+   ```
+
+2. **Function Expressions**
+   - Function expressions (functions assigned to variables) are not fully hoisted.
+   - Only the variable declaration is hoisted, not the function itself.
+
+   ```javascript
+   console.log(multiply); // undefined
+   var multiply = function (a, b) {
+     return a * b;
+   };
+   ```
+
+   ```javascript
+   console.log(divide); // ReferenceError: Cannot access 'divide' before initialization
+   let divide = function (a, b) {
+     return a / b;
+   };
+   ```
+
+### Key Points
+- **`var` variables**: Moved to the top of the function scope, start as `undefined`.
+- **`let` and `const` variables**: Moved to the top of the block scope, not initialized until declared.
+- **Function declarations**: Fully moved to the top, can be used before they appear in the code.
+- **Function expressions**: Only the variable part is moved, not the function assignment.
+
+
+
+
+
+
+
+Temporal Dead Zone
+The Temporal Dead Zone (TDZ) is the time span between variable declaration and its initialization. During this time, the variable declared with let and const cannot be used.
+
+#### Example of TDZ
+
+```javascript
+console.log(a); // Error: Cannot access 'a' before initialization
+let a = 10;
+console.log(a); // 10
+```
+
+Here, `a` cannot be used before the line `let a = 10;`.
+
+#### Key Points
+
+1. **Variables with `let` and `const`**:
+   - These variables are in the TDZ from the start of the block until they are declared.
+   - Trying to use them before the declaration gives an error.
+
+2. **Purpose of TDZ**:
+   - The TDZ helps catch mistakes by not allowing the use of variables before they are properly declared.
+
+#### Simple Example
+
+```javascript
+function example() {
+  console.log(b); // Error: Cannot access 'b' before initialization
+  let b = 20;
+  console.log(b); // 20
+}
+
+example();
+```
+
+In this function, `b` is in the TDZ until `let b = 20;` is executed.
+
+#### Comparison with `var`
+
+```javascript
+function exampleVar() {
+  console.log(c); // undefined (no TDZ for `var`)
+  var c = 30;
+  console.log(c); // 30
+}
+
+exampleVar();
+```
+
+For variables declared with `var`, there is no TDZ. They are hoisted to the top and initialized as `undefined`.
+
+### Summary
+- **TDZ**: Time when `let` or `const` variables can't be used.
+- **Error**: Using these variables before they are declared gives an error.
+- **Why**: This helps find mistakes in the code.
+
+
+### JavaScript Closures Explained Simply
+ 
+
+Sep 11 - 4:59 pm
+functions with conditional amd looping statements.docx
+Click to download
+Sep 17 - 10:25 am
+write down these these tasks on sheet. i'll collect sheets on thursday.  
+
+Sep 17 - 10:27 am
+Please fill the form if u have assessment in next two days
+
+https://forms.gle/s9iUTrK4DyW3wTiLA 
+
+Sep 18 - 10:42 pm
+your todays javascript batch will be on 5th floor. room no 1.  
+
+Sep 19 - 10:31 am
+### Task 1: Print Each Element
+Create an array of your favorite foods and use the `forEach` method to print each food item to the console.
+
+```javascript
+const foods = ["Pizza", "Burger", "Sushi", "Pasta", "Tacos"];
+```
+**Expected Output:**
+```
+Pizza
+Burger
+Sushi
+Pasta
+Tacos
+```
+
+### Task 2: Square Each Number
+Create an array of numbers. Use the `forEach` method to square each number and print the result to the console.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+```
+**Expected Output:**
+```
+1
+4
+9
+16
+25
+```
+
+### Task 3: Concatenate Strings
+Create an array of strings. Use the `forEach` method to concatenate the string " is awesome!" to each element and print the result.
+
+```javascript
+const hobbies = ["Reading", "Coding", "Hiking", "Gaming"];
+```
+**Expected Output:**
+```
+Reading is awesome!
+Coding is awesome!
+Hiking is awesome!
+Gaming is awesome!
+```
+
+### Task 4: Sum of Array Elements
+Create an array of numbers. Use the `forEach` method to find the sum of all elements in the array and print the total.
+
+```javascript
+const numbers = [10, 20, 30, 40, 50];
+```
+**Expected Output:**
+```
+Total Sum: 150
+```
+
+### Task 5: Capitalize Each String
+Create an array of lowercase words. Use the `forEach` method to capitalize the first letter of each word and print the result.
+
+```javascript
+const words = ["apple", "banana", "cherry", "date"];
+```
+**Expected Output:**
+```
+Apple
+Banana
+Cherry
+Date
+```
+
+### Task 6: Add Index to Each Element
+Create an array of random items. Use the `forEach` method to add the index position to each element (e.g., "Item0", "Item1", etc.) and print the result.
+
+```javascript
+const items = ["Book", "Pen", "Laptop", "Phone"];
+```
+**Expected Output:**
+```
+Book0
+Pen1
+Laptop2
+Phone3
+```
+
+### Task 7: Check Even or Odd
+Create an array of numbers. Use the `forEach` method to print whether each number is even or odd.
+
+```javascript
+const numbers = [13, 22, 35, 40, 51];
+```
+**Expected Output:**
+```
+13 is Odd
+22 is Even
+35 is Odd
+40 is Even
+51 is Odd
+```
+
+### Task 8: Filter Out Short Names
+Create an array of names with varying lengths. Use the `forEach` method to print only the names that have more than 4 characters.
+
+```javascript
+const names = ["John", "Amy", "Alexander", "Zoe", "Chris"];
+```
+**Expected Output:**
+```
+Alexander
+Chris
+```
+
+### Task 9: Count Vowels
+Create an array of single letters. Use the `forEach` method to count the number of vowels and print the total.
+
+```javascript
+const letters = ["a", "b", "e", "i", "o", "p", "u"];
+```
+**Expected Output:**
+```
+Number of vowels: 5
+```
+
+```
+
+ 
+
+Sep 20 - 7:03 pm
+Closure
+A closure is a feature in JavaScript where a function remembers and can access variables from outside its own scope, even after the outer function has finished executing.
+
+Example of a Closure
+function outerFunction() {
+  let outerVariable = 'I am outside!';
+  
+  function innerFunction() {
+    console.log(outerVariable); // This is a closure
+  }
+  
+  return innerFunction;
+}
+
+const closureFunction = outerFunction();
+closureFunction(); // Logs: 'I am outside!'
+```
+
+Here, `innerFunction` remembers `outerVariable` from `outerFunction` even after `outerFunction` has finished running. This is a closure.
+
+Key Points
+
+1. Function Inside a Function :
+   - A closure is created when a function is defined inside another function, and the inner function accesses variables from the outer function.
+
+2. Remembering Variables:
+   - The inner function "remembers" the variables from the outer function's scope even after the outer function has finished running.
+
+3. Practical Use :
+   - Closures are useful for creating private variables and functions.
+
+Simple Example
+
+
+function createCounter() {
+  let count = 0;
+  
+  return function() {
+    count += 1;
+    console.log(count);
+  };
+}
+
+const counter = createCounter();
+counter(); // Logs: 1
+counter(); // Logs: 2
+counter(); // Logs: 3
+```
+
+In this example, the inner function increments and logs the `count` variable each time it is called. The `count` variable is remembered between calls because of the closure.
+
+Summary
+- Closure : A function that remembers and can use variables from outside its own scope.
+- How : Defined inside another function, accessing the outer function's variables.
+- Use : Useful for maintaining state or creating private variables and functions.
+
+ 
+
+Sep 20 - 9:14 pm
+Lexical Scope/Scope Chain
+1.	 The ability of js engine to search for a variable in the outer scope when variable is not available in local scope is known as
+lexical scope or scope chain.
+2.	 It is ability of child to access variable from outside if its not present in local scope
+3.	 Lexical scope : A function and global object.
+
+let a = 10;
+function test() {
+    a++;
+    console.log( a );
+}
+test();
+
+Output : 11
+
+When test function is executed js engine looks for ' a ' in local scope. Since it will not available it will look for a in outer scope that is global window object .
+4.	 Lexical scope : The child function and parent function with a help of closure.
+
+function outer() {
+  let a = 10;
+      function inner() {
+          console.log(a);
+      }
+  return inner;
+}
+
+let res = outer();
+res();
+
+Output : 10
+
+When the function inner is executed and console.log a is encountered, js engine looks for a in the local scope of function inner.
+Since, a is not present and function inner is child of function outer js engine will search for a in the parent function outer scope with the help of closure.
+
+
+
+#Closure
+1. A closure is created when a function is defined within another function and inner function need to access variables in the outer function's scope.
+2. Closure helps to achieve lexical scope from child function to parent function.
+3. Closure preserves the state of parent function even after the execution of parent function is completed.
+4. A child function will have reference to the closure.
+5. Every time a parent function is called the new closure is created.
+6. Disadvantage : High memory consumption.
+ 
+
+Sep 20 - 9:15 pm
+Object
+1. An Object is a block of memory which has state(variable) , behaviour(methods) and where we can store heterogenous data.
+2. An object is a collection of key-value pairs that can contain various data types, such as numbers, strings, arrays, functions, and other objects.
+3. In one object we can have multiple key value pair and it should be separated by ',' comma.
+4. We can access value of object using (.) Operator or square bracket [] , object reference and key_name.
+#Object Key (Property)
+1. Object key (property) will be automatically converted into string by js engine.
+2. If keys name are in Number , js engine will convert them into string and arrange them in ascending order.
+3. To write space separated key names , we have to enclose key name with double quotes.
+4. If we want to give computed or user defined property then we have to use square brackets and variable name.
+5. 
+If key-name is same as variable name which hold the value , instead of writing two times we can write varaiable name only once.
+
+let phone = 8800425635;
+let obj = {
+  phone,
+  // phone:phone
+};
+#Ways To Create Object
+
+1. 
+By using curly braces { } and literals.
+
+let obj = {}
+// empty object
+
+let obj = { name:"chombi",age:16}
+// object with literals
+
+2. 
+By using new keyword and Constructor.
+
+let obj = new Object();
+// {} empty object
+
+let obj=new Object({ name:"chombi"});
+// { name:"chombi"} object with literals
+
+3. By using new keyword and Constructor function
+4. By using class
+#Access Object Value
+
+1. 
+By using dot operator ( . ) and key name.
+
+let obj = { name:"chombi",age:16}
+
+console.log(http://obj.name)// chombi
+console.log(obj.age)// 16
+
+2. 
+By using square brackets ( [] ) and key name.
+
+let obj = { name:"chombi",age:16}
+
+console.log(obj["name"])// chombi
+console.log(obj["age"])// 16
+
+3. If we try to access property which is not available in object we will get undefined.
+#Object Methods
+1. In JavaScript, object methods are functions that are attached to the object, and can be called on that object reference.
+2. To call a function , we use square brackets instead dot operator.
+3. 
+Here, speak is a variable which holds the function reference.
+
+let obj1 = { name: "chombi",
+age: 16,
+speak: function () {
+console.log('i can speak');
+} }
+console.log(obj1["speak"]());
+//i can speak
+
+4. 
+Access object property inside function - function declared with function keyword.
+
+let obj1 = { name: "chombi",
+age: 16,
+speak: function () {
+console.log('My name is' + this.name+',age' + this.age+' and i can speak');
+} }
+console.log(obj1["speak"]());
+//My name is chombi , age 16 and i can speak
+
+Here, we can access object property, by using 'this' keyword.
+5. 
+Access object property inside function - Arrow function.
+
+let obj1 = {
+  name: "chombi",
+  age: 16,
+  speak: () => {
+    console.log(
+      "My name is" + http://obj1.name + " , age " + obj1.age + " and i can speak"
+    );
+  },
+};
+console.log(obj1["speak"]());
+//My name is chombi , age 16 and i can speak
+// Here, we can access object property, by using object reference.
+
+Here , we can can access object property , by using object reference because arrow function is not having 'this' property.
+#Add Key Value In Object
+
+1. To add key-value pair we can using dot operator and square brackets
+2. 
+By using dot operator ( . ) and key name
+
+let obj = { name:"chombi",age:16}
+
+http://obj.country = "india";
+//new key-value added in object
+// {
+name:"chombi",
+age:16,
+country:"india",
+}
+
+NOTE : If property is already available with same name it will updated with new value.
+Example:
+let obj = { name:"chombi",age:16 }
+obj.age = 18;
+//age property value is updated
+// {
+name:"chombi",
+age:18,
+}
+
+#Check Property Is Available In Object Or Not
+
+1. 
+We can check using "in" operator.
+Syntax : "property name" in object_name
+
+let obj = { name:"chombi",age:16}
+
+http://obj.country = "india";
+//new key-value added in object
+// {
+name:"chombi",
+age:16,
+country:"india",
+}
+
+
+
+We can check using "in" operator.
+
+let obj = { name:"chombi",age:16}
+
+console.log("name" in obj )// true
+console.log("age" in obj )// true
+console.log("city" in obj )// false
+ 
+
+Sep 20 - 9:17 pm
+JavaScript Notes QSP.docx
+Click to download
+Sep 25 - 4:23 pm
+1. **Extract Object Keys**  
+   You are given an object representing a student:
+   ```javascript
+   const student = {
+     name: 'Alice',
+     age: 22,
+     major: 'Computer Science',
+     GPA: 3.8
+   };
+   ```
+   Extract all the keys from the `student` object and print each key along with its corresponding value.
+
+2. **Retrieve Object Values**  
+   Given the following object representing a movie:
+   ```javascript
+   const movie = {
+     title: 'Inception',
+     director: 'Christopher Nolan',
+     releaseYear: 2010,
+     rating: 8.8
+   };
+   ```
+   Retrieve all the values from this `movie` object and print them in a structured format.
+
+3. **Convert Object to Key-Value Pairs**  
+   You have an object that represents a book:
+   ```javascript
+   const book = {
+     title: '1984',
+     author: 'George Orwell',
+     genre: 'Dystopian'
+   };
+   ```
+   Convert the object into an array of key-value pairs and print each pair in the format: `key: value`.
+
+4. **Recreate Object from Key-Value Pairs**  
+   You are given an array of key-value pairs:
+   ```javascript
+   const keyValueArray = [
+     ['name', 'Charlie'],
+     ['age', 30],
+     ['job', 'Engineer']
+   ];
+   ```
+   Convert this array back into an object and print the newly created object.
+
+5. **Merge Two Objects**  
+   Given the following two objects:
+   ```javascript
+   const contactInfo = {
+     phone: '123-456-7890',
+     email: 'john.doe@example.com'
+   };
+
+   const address = {
+     street: '123 Main St',
+     city: 'Anytown',
+     state: 'CA'
+   };
+   ```
+   Merge these two objects into a single `userInfo` object and print the merged object.
+
+
+6. **Shallow Copy with Object.assign**  
+   Create a nested object representing a `person`:
+   ```javascript
+   const person = {
+     name: 'John',
+     age: 35,
+     address: {
+       city: 'New York',
+       country: 'USA'
+     }
+   };
+   ```
+   Create a shallow copy of the `person` object. Modify the `city` property in the copied object and check the original object.
+
+7. **Deep Copy using JSON Methods**  
+   Given the same nested `person` object, create a deep copy of it. Modify the `address` in the deep copy and verify the original object remains unchanged.
+
+
+8. **Object Literal Syntax**  
+   Create an object using object literal syntax to represent a smartphone:
+   Print each property of the `smartphone` object.
+
+9. **Factory Function**  
+   Write a factory function `createCar(make, model, year)` that returns an object representing a car. The object should have a `drive` method that logs the car's make and model. Use the factory function to create 3 different car objects and call the `drive()` method on each.
+
+10. **Constructor Function**  
+   Define a constructor function `User(name, email)` that initializes a user object with `name` and `email` properties. Add a method `greet()` to the constructor that logs a greeting message using the user’s name. Create multiple instances of `User` and call the `greet()` method on them.
+
+11. **Creating Objects with Classes**  
+   Create a class `Dog` with a constructor that takes `name` and `breed` as parameters. Add a method `bark()` that logs the dog's name followed by "is barking". Instantiate the class with 2 dogs and make them bark.
+
+
+12. **Using Constructor Function**  
+   Create a constructor function `Movie(title, director)` that initializes a movie object. Add a prototype method `getDetails()` that returns a string with the title and director. Create a few movie instances and call `getDetails()` on them.
+
+13. **Assign Default Values to an Object**  
+   You have an object with missing properties:
+   ```javascript
+   const userProfile = {
+     name: 'Alice',
+     age: 25
+   };
+   ```
+   Merge the object with default values `{age: 18, city: 'Unknown'}` and print the updated object.
+
+14. **Cloning an Object with Object.assign**  
+   Create an object `laptop` with properties like `brand`, `model`, and `price`. Clone the `laptop` object into a new object `newLaptop`. Modify `newLaptop` and ensure the changes don’t affect the original `laptop`.
+
+15. **Adding Methods to an Existing Object with Object.assign**  
+   You have a `robot` object:
+   ```javascript
+   const robot = {
+     name: 'Robo'
+   };
+   ```
+   Add two new methods to the `robot` object: `greet()` and `performTask()`. The `greet` method should log the robot's name, and `performTask` should log a generic task message.
+
+
+16. **Iterating through Object Properties using Object.entries**  
+   Given the following object:
+   ```javascript
+   const movie = {
+     title: 'The Matrix',
+     director: 'Wachowskis',
+     year: 1999
+   };
+   ```
+   Iterate through the object and log each key-value pair in the format: `key: value`.
+
+17. **Dynamic Access to Object Keys**  
+   Write a function `getProperty(obj, key)` that takes an object and a key as arguments. Check if the key exists in the object. If it exists, return the value of the key; otherwise, return `"Key not found"`.
+ 
+
+Sep 30 - 7:42 pm
+complete these questions by tomorrow on sheets.  
+
+Sep 30 - 7:42 pm
+
+### Task 1: Double the Numbers
+Write a function that takes an array of numbers and returns a new array with each number doubled.
+
+**Input:** `[1, 2, 3, 4, 5]`  
+**Output:** `[2, 4, 6, 8, 10]`
+
+---
+
+### Task 2: Convert Temperatures
+Given an array of temperatures in Celsius, use `map()` to convert them to Fahrenheit.
+
+**Formula:** `F = (C × 9/5) + 32`  
+**Input:** `[0, 10, 20, 30]`  
+**Output:** `[32, 50, 68, 86]`
+
+---
+
+### Task 3: Add 'Hello' to Each Name
+You have an array of names. Use `map()` to return a new array where each name is prefixed with "Hello".
+
+**Input:** `["Alice", "Bob", "Charlie"]`  
+**Output:** `["Hello Alice", "Hello Bob", "Hello Charlie"]`
+
+---
+
+### Task 4: Extract Property Values
+You have an array of objects representing users. Use `map()` to return an array of just the usernames.
+
+**Input:** `[{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }]`  
+**Output:** `["Alice", "Bob"]`
+
+---
+
+### Task 5: Square the Numbers
+Write a function that squares each number in an array and returns the new array using `map()`.
+
+**Input:** `[2, 3, 4]`  
+**Output:** `[4, 9, 16]`
+
+---
+
+### Task 6: Create HTML List Items
+Given an array of product names, use `map()` to return a new array of HTML `<li>` elements for each product.
+
+**Input:** `["Apples", "Oranges", "Bananas"]`  
+**Output:** `["<li>Apples</li>", "<li>Oranges</li>", "<li>Bananas</li>"]`
+
+---
+
+### Task 7: Add Tax to Prices
+You have an array of product prices. Use `map()` to return a new array where each price includes 15% tax.
+
+**Input:** `[100, 200, 300]`  
+**Output:** `[115, 230, 345]`
+
+---
+
+
+### Task 8: Convert Strings to Numbers
+You have an array of strings representing numbers. Use `map()` to convert them into actual numbers.
+
+**Input:** `["1", "2", "3"]`  
+**Output:** `[1, 2, 3]`
+
+
+ 
+
+Oct 02 - 12:54 pm
+1. **Task**: Write a function that accepts a full name (first and last name) as input and returns the total number of characters in the name, excluding spaces. The function should also return a message like: "Your name has X characters."
+
+2. **Task**: Write a function that accepts a string and returns the third character in that string. If the string is too short (less than three characters), return a message like: "The string is too short."
+
+3. **Task**: Write a function that takes a string and returns the Unicode value of the character in the middle of the string. If the string has an even number of characters, return the Unicode value of the character just before the middle.
+
+4. **Task**: Create a function that checks if a given file name starts with "Report" (case-sensitive). If it does, return a message like: "This is a report file." If not, return: "This is not a report file."
+
+5. **Task**: Write a function that accepts a string and checks if it ends with ".jpg". If it does, return: "This is an image file." Otherwise, return: "This is not an image file."
+
+6. **Task**: Write a function that checks if the word "password" is included in a user's input string. If it is found, return: "Your input contains a forbidden word." Otherwise, return: "Input accepted."
+
+7. **Task**: Write a function that searches a paragraph for the first appearance of the word "important" and returns the position (index) of that word. If the word isn't found, return a message like: "The word 'important' is not in the paragraph."
+
+8. **Task**: Create a function that takes a sentence and replaces all instances of the word "sad" with "happy." Return the updated sentence.
+
+9. **Task**: Write a function that takes a long string of text and replaces all occurrences of the word "mistake" with "correction." It should replace every instance found and return the updated text.
+
+10. **Task**: Write a function that extracts the first 10 characters from a given string and returns them. If the string has fewer than 10 characters, return the entire string.
+
+11. **Task**: Write a function that takes a sentence and splits it into an array of individual words. Then, return the array and display each word on a new line.
+
+12. **Task**: Create a function that converts a sentence into lowercase letters and returns the new version. For example, the input "HELLO WORLD" should be converted to "hello world."
+
+13. **Task**: Write a function that converts all the characters in a string to uppercase and returns the updated string. If the input is "good morning", the output should be "GOOD MORNING."
+
+14. **Task**: Write a function that accepts a number and converts it into a string. For example, if the number is 123, the output should be the string "123". The function should return the string with a message like: "The number has been converted to a string."
+
+15. **Task**: Write a function that removes extra spaces from the start and end of a string. For example, if the input is "  hello world  ", the output should be "hello world". The function should return a message like: "Extra spaces have been removed."
+
+16. **Task**: Create a function that accepts a string with extra spaces at the start and trims only the leading spaces. For example, the input "  learn JavaScript" should return "learn JavaScript", with a message: "Leading spaces have been removed."
+
+17. **Task**: Write a function that takes a string and trims off any trailing spaces. If the input is "coding is fun   ", it should return "coding is fun" with a message: "Trailing spaces have been removed."
+
+18. **Task**: Write a function that takes a string and checks whether it starts with an uppercase letter. If the first letter is capitalized, return a message like: "The string starts with an uppercase letter." Otherwise, return: "The string starts with a lowercase letter."
+
+19. **Task**: Write a function that accepts a sentence and converts only the first letter of the sentence to uppercase, while the rest of the letters are converted to lowercase. For example, "hello WORLD" should become "Hello world." Return the updated sentence with a message.
+
+20. **Task**: Write a function that takes a sentence and counts how many spaces are in it. The function should return the total number of spaces with a message like: "There are X spaces in the sentence."
+ 
+
+Oct 05 - 1:23 pm
+
+### Destructuring Tasks:
+
+1.	**Basic Array Destructuring**: 
+   You have an array `const colors = [“red”, “green”, “blue”]`. Destructure this array to assign the first, second, and third values to separate variables, `firstColor`, `secondColor`, and `thirdColor`. Ensure that each variable holds the corresponding color.
+
+2.	**Skipping Elements During Destructuring**:  
+   Given the array `const numbers = [1, 2, 3, 4, 5]`, use destructuring to assign the first and third elements to separate variables. Skip the second element without creating a variable for it.
+
+3.	**Destructuring a Nested Array**:  
+   You have a nested array `const matrix = [[1, 2], [3, 4], [5, 6]]`. Destructure it to get the individual numbers from each sub-array. Assign each value (1, 2, 3, etc.) to its respective variable.
+
+4.	**Destructuring an Object**:  
+   Given the object `const user = { name: “Alice”, age: 30, location: “Wonderland” }`, destructure it to extract the `name`, `age`, and `location` properties into separate variables. Ensure each variable contains the correct value.
+
+5.	**Renaming During Object Destructuring**:  
+   You have an object `const point = { x: 10, y: 20 }`. Destructure the object to rename `x` as `horizontal` and `y` as `vertical`. Store the values in these renamed variables.
+
+6.	**Providing Default Values**:  
+   Given the object `const book = { title: “JavaScript Basics”, year: 2021 }`, destructure it to extract `title`, `year`, and a non-existent `author` property. Assign a default value of “Unknown Author” to `author`.
+
+7.	**Destructuring Function Parameters**:  
+   Write a function `getProfile({ name, age, country })` that takes an object as an argument. Destructure the object to extract `name`, `age`, and `country` and use them inside the function.
+
+8.	**Destructuring Nested Objects**:  
+   Given the object `const person = { name: “Bob”, details: { age: 25, address: { city: “New York”, country: “USA” } } }`, destructure it to get the `name`, `age`, `city`, and `country` into separate variables.
+
+9.	**Rest Operator in Array Destructuring**:  
+   You have an array `const letters = [“a”, “b”, “c”, “d”, “e”]`. Use the rest operator in destructuring to extract the first letter into a variable, and the remaining letters into another array.
+
+10.	**Rest Operator in Object Destructuring**:  
+    Given the object `const settings = { theme: “dark”, notifications: true, layout: “grid”, language: “en” }`, destructure it to extract the `theme` property and group the rest of the properties into a separate object.
+
+### Spread Operator Tasks:
+
+11.	**Copying an Array**:  
+    Given the array `const originalArray = [1, 2, 3]`, create a new array by copying `originalArray` using the spread operator. Modify the new array without affecting the original array.
+
+12.	**Merging Two Arrays**:  
+    You have two arrays `const arr1 = [10, 20]` and `const arr2 = [30, 40]`. Merge these two arrays into one using the spread operator and store the result in a new variable.
+
+13.	**Concatenating Arrays with Spread**:  
+    Given two arrays `const start = [1, 2]` and `const end = [9, 10]`, use the spread operator to concatenate the `start` array at the beginning of the `end` array.
+
+14.	**Copying an Object Using Spread**:  
+    You have an object `const car = { make: “Toyota”, model: “Corolla” }`. Use the spread operator to create a copy of this object. Modify the copy without affecting the original object.
+
+15.	**Merging Objects with Spread**:  
+    Given two objects `const defaults = { volume: 50, brightness: 80 }` and `const userSettings = { volume: 30 }`, merge them into a new object. Ensure the `volume` from `userSettings` overwrites the one in `defaults`, while keeping the other properties from `defaults`.
+
+16.	**Using Spread in Function Arguments**:  
+    Write a function `sum(a, b, c)` that takes three numbers as arguments. Call this function with an array `[5, 10, 15]` using the spread operator to pass the values as individual arguments.
+
+17.	**Rest Operator in Function Parameters**:  
+    Write a function `calculateTotal(…prices)` that accepts any number of price values as arguments. Inside the function, sum all the price values and return the total.
+
+18.	**Combining Rest and Spread**:  
+    You have a function `combineArrays(arr1, arr2)` that merges two arrays. Modify the function so that it can accept any number of arrays using the rest operator. Use the spread operator inside the function to merge the arrays.
+
+19.	**Array Destructuring with Spread**:  
+    Given the array `const nums = [1, 2, 3, 4, 5]`, destructure it to extract the first number into one variable and the rest of the numbers into another array using the spread operator.
+
+20.	**Rest and Spread in Object Destructuring**:  
+    You have an object `const config = { host: “localhost”, port: 3000, user: “admin”, password: “1234” }`. Destructure this object to extract `host` and `port` into separate variables, while using the rest operator to group the remaining properties into another object. Use the spread operator to modify this new object by changing the `user` property.
+
+
+
+ 
+
+Oct 09 - 6:49 pm
+todays presentation will be on 4th floor.  
+
+Oct 15 - 3:44 pm
+attendance is compulsory  
+
+Oct 15 - 3:44 pm
+come to 6th floor room no 6 for presentation.  
+
+Oct 15 - 4:54 pm
+
+### 1. **Create a Simple Promise**
+   - Create a promise that resolves with the message “Data loaded successfully”.
+   - Use `.then()` to log the result when the promise resolves.
+
+   **Example Goal**: You should see “Data loaded successfully” in the console when the promise resolves.
+
+
+### 2. **Basic Promise Rejection**
+   - Write a promise that rejects with an error message “Error: Failed to load data”.
+   - Use `.catch()` to handle the rejection and log the error message to the console.
+
+   **Example Goal**: The console should show the error message “Error: Failed to load data” when the promise rejects.
+
+
+### 3. **Promise with `.then()` for Math Operations**
+   - Create a promise that resolves with the number `10`.
+   - In the `.then()` block, multiply the number by 2 and log the result.
+
+   **Example Goal**: The console should show `20` as the final result after the promise resolves.
+
+
+### 4. **Chain Multiple `.then()` Calls**
+   - Create a promise that resolves with the number `5`.
+   - Chain two `.then()` blocks. In the first block, add `3` to the number. In the second block, multiply the result by `2`.
+   - Log the final result after all `.then()` blocks have executed.
+
+   **Example Goal**: The final result logged to the console should be `16`.
+
+
+### 5. **Fetch Data from an API**
+   - Use `fetch` to retrieve data from the API `https://jsonplaceholder.typicode.com/posts/1`.
+   - In the `.then()` block, convert the response to JSON and log the post title to the console.
+
+   **Example Goal**: The console should display the title of the post you fetched.
+
+
+### 6. **Handle Fetch Errors**
+   - Use `fetch` to request data from a non-existent API endpoint (e.g., `https://jsonplaceholder.typicode.com/nonexistent`).
+   - In the `.catch()` block, log an error message to the console, such as “Error: Could not retrieve data.”
+
+   **Example Goal**: You should see “Error: Could not retrieve data” logged to the console if the request fails.
+
+
+
+### 7. **Conditional Promise Resolution**
+   - Create a promise that uses a random number (between 0 and 1) to decide whether to resolve or reject.
+   - If the number is greater than 0.5, resolve with the message “Success!”.
+   - If the number is less than or equal to 0.5, reject with “Failure!”.
+   - Handle both cases using `.then()` and `.catch()`.
+
+   **Example Goal**: Depending on the random number, you should either see “Success!” or “Failure!” in the console.
+
+
+### 8. **Fetch and Convert Response to JSON**
+   - Use `fetch` to get data from `https://jsonplaceholder.typicode.com/users`.
+   - In the `.then()` block, convert the response to JSON and log the full JSON object to the console.
+
+   **Example Goal**: The console should display the list of users in JSON format.
+
+
+### 9. **Chain Fetch Requests**
+   - Use `fetch` to retrieve a post from `https://jsonplaceholder.typicode.com/posts/1`.
+   - Once you get the post’s `userId`, use another `fetch` request to get the details of the user from `https://jsonplaceholder.typicode.com/users/{userId}`.
+   - Chain both fetch requests using `.then()` and log both the post and user details.
+
+   **Example Goal**: The console should first show the post data, then the user details associated with that post.
+
+
+
+
+### 10. **Promise that Resolves or Rejects Based on Input**
+   - Create a promise that accepts a number as input.
+   - If the number is greater than `5`, resolve with “Valid number!”.
+   - If the number is less than or equal to `5`, reject with “Invalid number!”.
+   - Handle both success and error cases using `.then()` and `.catch()`.
+
+   **Example Goal**: If you input a number greater than 5, you should see “Valid number!”. Otherwise, “Invalid number!” will appear.
+
+
+
+### 11. **Propagate Errors Through Multiple `.then()`**
+   - Create a promise that either resolves or rejects based on a random number.
+   - If it rejects, log an error message and propagate the error to the next `.then()` block.
+   - Continue propagating the error and handle it in a final `.catch()` block.
+
+   **Example Goal**: The console should display the error message, and it should be handled correctly at the end.
+
+
+### 12. **Transform Fetched Data**
+   - Use `fetch` to get a list of users from `https://jsonplaceholder.typicode.com/users`.
+   - In the `.then()` block, transform the data to only include usernames.
+   - Log the array of usernames to the console.
+
+   **Example Goal**: The console should display an array of usernames, extracted from the fetched user data.
+
+
+
+### 13. **Resolve or Reject Based on Boolean**
+   - Create a promise that uses a Boolean flag (e.g., `true` or `false`) to decide whether to resolve or reject.
+   - If the flag is `true`, resolve with “Action successful!”.
+   - If the flag is `false`, reject with “Action failed!”.
+   - Handle both cases using `.then()` and `.catch()`.
+
+   **Example Goal**: Depending on the flag value, you should see either “Action successful!” or “Action failed!” in the console.
+
+
+### 14. **Fetch and Return Specific Data**
+   - Use `fetch` to get a list of posts from `https://jsonplaceholder.typicode.com/posts`.
+   - In the `.then()` block, return only the title of the first post and log it to the console.
+
+   **Example Goal**: The console should display the title of the first post.
+
+
+### 15. **Chain Fetch Requests with User and Posts**
+   - Fetch user data from `https://jsonplaceholder.typicode.com/users/1`.
+   - Once you get the user’s ID, fetch the posts of that user from `https://jsonplaceholder.typicode.com/posts?userId=1`.
+   - Chain both fetch requests and log both the user details and the user’s posts.
+
+   **Example Goal**: The console should first display the user data, followed by the posts associated with that user.
+
+
+
+
+ 
+
+Oct 15 - 7:44 pm
+tasks based on promises. 
+
+Oct 15 - 7:44 pm
+complete these tasks today itself on sheets. tomorrow I will collect the sheets.  
+
+Oct 15 - 7:45 pm
+
+download
+Oct 17 - 7:36 pm
+only thhese ppl will attend batch tomorrow onwards. remaining ppl dont come for batch anymore. syllabus is done for you. everything is done for you. you dont want to attend presentation so i dont want to see you in class. dont come tomorrow onwards.   
+
+Oct 17 - 7:39 pm
+how many of you are comming as a mentor for tomorrow's javascript mock? message me back. i want exact count.  
+
+Oct 20 - 7:47 am
+### DOM Manipulation Tasks:
+
+1. **Change Background Color:**
+   - Create a button with a label like “Change Background”. Write a function that will change the background color of the entire page when this button is clicked. You can allow the user to choose a random color or pick a predefined color.
+
+2. **Text Update:**
+   - Add a paragraph element to your HTML with some initial text (e.g., “Click the button to change this text.”). Create a button labeled “Update Text”. Write a function that, when the button is clicked, changes the paragraph text to something else (e.g., “Text updated!”).
+
+3. **Hide/Show Element:**
+   - Add a div with some content and a button labeled “Hide/Show”. Write a function that hides the div when the button is clicked for the first time, and shows it again when clicked the second time. Use a boolean or toggle to keep track of whether the div is visible or hidden.
+
+4. **Add New Item to List:**
+   - Create an input field and an empty unordered list (ul) in your HTML. Below the input, add a button labeled “Add Item”. Write a function that, when the button is clicked, adds the value from the input field as a new list item (li) to the unordered list. Make sure to clear the input field after adding the item.
+
+5. **Remove Last Item from List:**
+   - Add an unordered list with a few predefined list items (li). Below the list, add a button labeled “Remove Last Item”. Write a function that, when the button is clicked, removes the last item from the list. Make sure the function works even when the list is empty (i.e., it shouldn’t break).
+
+6. **Toggle Class:**
+   - Create a div element with some initial style, like a background color or border. Add a button labeled “Toggle Style”. Write a function that toggles a specific class on the div when the button is clicked. The class should change the div’s appearance (e.g., different color or border style).
+
+7. **Change Image Source:**
+   - Add an image element with an initial source. Below the image, add two buttons labeled “Change to Image 1” and “Change to Image 2”. Write functions for both buttons that change the image’s source to a different URL when clicked.
+
+8. **Create Elements Dynamically:**
+   - Add a button labeled “Add Paragraph”. Write a function that, when the button is clicked, creates a new paragraph element and appends it to the document body. The paragraph should contain some text (e.g., “This is a new paragraph!”).
+
+9. **Disable Button After Click:**
+   - Add a button labeled “Click Me”. Write a function that disables the button (i.e., makes it unclickable) after it’s been clicked once. You can change the button’s text to indicate that it’s been disabled (e.g., “Button Disabled”).
+
+10. **Display Input Text:**
+    - Create an input field and a div below it. Write a function that, as the user types into the input field, displays the same text in the div In real-time. This can be achieved by listening for the input event and updating the div’s inner text with the input’s current value.
+
+11. **Change Text Color on Hover:**
+    - Add a paragraph element with some text. Write a function that changes the text color when the mouse hovers over the paragraph and reverts the color back to its original state when the mouse leaves.
+
+12. **Display Current Date and Time:**
+    - Add a button labeled “Show Date and Time”. Write a function that, when the button is clicked, displays the current date and time in a div below the button. You can use JavaScript’s `Date` object to get the current date and time.
+
+13. **Remove Element:**
+    - Add a div or any other element with some content. Below it, add a button labeled “Remove Element”. Write a function that removes the element from the DOM when the button is clicked.
+
+14. **Count Button Clicks:**
+    - Create a button labeled “Click Counter”. Below the button, add a paragraph that displays the number of times the button has been clicked (e.g., “Button clicked 0 times”). Write a function that increments the count every time the button is clicked.
+
+15. **Display Window Width:**
+    - Add a div that will display the current window width. Write a function that updates the width in the div whenever the user resizes the window. You can listen for the `resize` event and use `window.innerWidth` to get the current width.
+
+16. **Add Class to All Elements:**
+    - Add a few paragraph elements to the page. Below them, add a button labeled “Add Class”. Write a function that, when the button is clicked, adds a specific class (e.g., a class that changes the text color) to all the paragraph elements on the page.
+
+17. **Input Validation:**
+    - Create a form with a text input field and a submit button. Write a function that validates the input field when the form is submitted. If the field is empty, display an error message below the form and prevent the form from being submitted.
+
+18. **Change Font Size:**
+    - Add a paragraph with some text. Below the paragraph, add a button labeled “Increase Font Size”. Write a function that increases the font size of the paragraph by 2px every time the button is clicked.
+
+
+
+### Event Handling Tasks:
+
+21. **Button Hover Event:**
+    - Add a button labeled “Hover Me”. Write a function that changes the background color of the button when the user hovers over it and reverts the color when the mouse leaves.
+
+22. **Form Submission Event:**
+    - Create a simple form with an input field and a submit button. Write a function that prevents the form from being submitted if the input is empty, and display an error message below the form. Use `event.preventDefault()` to prevent form submission.
+
+23. **Keyboard Event:**
+    - Add an input field. Write a function that listens for the “Enter” key and triggers an alert when it’s pressed inside the input field. Make sure the function only works for the “Enter” key.
+
+24. **Double-Click Event:**
+    - Create a div with some content and write a function that changes its background color when it’s double-clicked. The background should change every time a double-click event occurs.
+
+25. **Key Press Counter:**
+    - Add an input field and a paragraph that displays the number of times a key has been pressed inside the input field. Write a function that increments the count with every keypress and updates the paragraph.
+
+26. **Mouse Movement Tracker:**
+    - Write a function that tracks the mouse’s position on the page in real-time and displays the current x and y coordinates in a div. Update the coordinates every time the mouse moves.
+
+27. **Right-Click Event:**
+    - Add an element to your page, like a button or div. Write a function that triggers an alert when the user right-clicks on the element. Use the `contextmenu` event to handle the right-click.
+
+28. **Mouse Over Event:**
+    - Create a div or paragraph with some text. Write a function that changes its text or color when the mouse is moved over the element and changes it back when the mouse leaves.
+
+29. **Focus Event:**
+    - Add an input field. Write a function that changes the input field’s border color when it gains focus and reverts the color when it loses focus. Use the `focus` and `blur` events for this.
+
+
+
+
+
+ 
+
+Oct 20 - 10:58 am
+dom and events tasks.  
+
+Oct 20 - 10:59 am
+tomorrow's class is imp. dont miss tomorrow's lecture  
+
+Oct 20 - 11:00 am
+mentors come fast to room no 8 
+
+Oct 21 - 8:20 am
+javascript interview questions.pdf
+Click to download
+Oct 22 - 4:31 pm
+be there on time (2.30) for mock. attendance is compulsory.  
+
+Oct 25 - 11:52 am
+come for mock at second floor small room
+ 
+
+Oct 25 - 4:36 pm
+tomorrow at 2.30 for mock on 2nd floor small room. tomorrow is last day for mock. be in formals for mock.  
+
+Oct 25 - 8:29 pm
+today your mock will start at 12.00. 2nd floor small room. i want everyone in class on time.   
+
+Oct 28 - 7:46 am
+be in formals 
+
+Oct 28 - 7:46 am
+many of you have not given the js final mock so im postponing the "react batch" until all will give and clear the mock with * or 1 rating..  
+
+Nov 05 - 6:19 pm
+i will not start react batch until all people gives the js final mock. if your rating is 2/3 you have to give remock. 
+
+Nov 08 - 4:45 pm
+
+
+//EXTRACTED..!
+JavaScript was created by Brendan Eich in 1995 as a lightweight client-side scripting language to add interactivity to web pages.
+Initially called Mocha and later LiveScript, it became popular for enabling responsive web content without server-side 
+dependencies. Over time, JavaScript evolved into a powerful, full-fledged language used in both client and server-side 
+applications, becoming one of the most widely used programming languages globally.
