@@ -1,0 +1,98 @@
+-javascript
+  -history of js 
+  -javascript features
+  -javascript runtimes
+  -operators in javascript(7 types)
+    -logical operators
+    -comparision operators
+    -arithmetic operators
+    -*** diff:=  and ==
+  -5 types of tokens in js
+    -01)literals
+      -types
+        -primitive(7 approx???)
+        -non-primitive
+    -02)punctuators
+    -03)operators
+        -arithmetic
+        -assignment
+        -comparision 
+        -logical
+        -bitwise
+        -string 
+        -conditional 
+        -typeOf
+    -04)keywords
+    -05)identifiers
+  -functions in javascript
+    -parameters and arguments
+    -function declaration
+    -return keyword
+    -types
+      -created using function keyword
+      -function expression
+      -IIF
+      -arrow function
+      -higher order function and callback function
+    -nesting of functions
+  -scopes in javascript
+    -global 
+    -local
+  -explain global execution context in javascript
+  -note on let vs const vs var
+  -explain temporal dead zone,hoisting,closure
+  -explain term functional programing
+  -explain hoisting in js
+    -variable vs function hoisting
+  -explain closure in js
+  -explain objects in js
+    -object key and value
+    -ways to creat object in js
+      -using curly braces
+      -using keyword and constructor
+      -using keyword and constructor function
+      -by using class
+    -accessing object values
+      -using . and key name
+      -using square bracket and key-name
+      ------------------------------------
+      -access object property inside function function
+      -access object property inside function arrow function
+    -explain object methods
+    -adding key and value in object
+    -closure
+    -explain lexical scope /scope chain
+    -extract object key
+    -retrive object value
+    -coverting object to key-value pairs
+    -recreate object from key-value pairs
+    -merge two objects
+    -shallow copy with object assignement
+    -deep copy using json methods
+    -object literals syntax
+    -factory function
+    -constructor function
+    -creating object with classes
+    -using constructor function
+    -assigning default values to an object
+    -cloning an object with object assignement
+    -adding methods to an existing object
+    -iterating through object properties
+    -dynamic access to object keys
+  -explain destructuring in js
+  -explain promises in js
+  -fetching data from API
+  -explin dom in js
+  -event handling in js
+
+
+
+    
+
+      
+
+
+
+
+    
+    
