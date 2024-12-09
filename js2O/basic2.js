@@ -7,3 +7,4 @@
 
 //[03]
  
+console.log("hi")

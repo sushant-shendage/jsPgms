@@ -1,0 +1,25 @@
+//  class obj {
+//     playerName= "player1"
+//     playerId="j4ib5gj"
+//     playerPassword="5y55y"
+//     playerScore=34465
+ 
+
+//  }
+//  console.log(new obj().playerName)
+
+
+// {
+//    let b= ()=>{
+//       console.log("function b");
+//    }
+//    console.log(b)
+//    b()
+// }
+
+
+
+// let b=()=>console.log(`functoion b`)
+// b()
+
+console.log(this)
